@@ -1,0 +1,256 @@
+{
+  "phobert_error_pairs": {
+    "dissatisfied->neutral": 43,
+    "neutral->dissatisfied": 31,
+    "satisfied->dissatisfied": 25,
+    "neutral->satisfied": 25,
+    "satisfied->neutral": 24,
+    "dissatisfied->satisfied": 19
+  },
+  "phobert_errors": [
+    {
+      "text": "Cả con robot, tiết kiệm thì cũng vừa vừa, đến cây dao cắt rối chổi cũng cắt thì thua. 1 chổi nên cuzng tạm, muốn sạch thì phải cho lau 2 lần",
+      "label": 1,
+      "bert": 0
+    },
+    {
+      "text": "Gần đây tai nghe của tôi chỉ kết nối dc 1 bên, đã reset lại tai nghe + bluetootch làm sao khắc phục ad ơi",
+      "label": 1,
+      "bert": 0
+    },
+    {
+      "text": "Nước xả đổ vào tự chảy hết. Hỗ trợ giúp mình",
+      "label": 1,
+      "bert": 0
+    },
+    {
+      "text": "Mới mua 590 Nó bây giờ còn 490",
+      "label": 1,
+      "bert": 0
+    },
+    {
+      "text": "Mình dùng tủ lạnh được nửa tháng, thấy làm lạnh tốt, rau củ hoa quả để lâu bị hỏng. Nhưng có vẻ tiếng kêu của náy có vấn đề thì phải. Ngoài tiếng iii như các tủ lạnh khác, nó còn kêu khè khè lúc máy chạy. Ban ngày k sao nhưng tối yên tĩnh thì nghe khá rõ. Không biết có vấn đề gì không.",
+      "label": 0,
+      "bert": 1
+    },
+    {
+      "text": "Dùng tạm được",
+      "label": 2,
+      "bert": 1
+    },
+    {
+      "text": "Nóng nhanh nhưng chỉ nhóm ở giữa dễ cháy nồi",
+      "label": 1,
+      "bert": 0
+    },
+    {
+      "text": "Mới mua lò nướng này ở dmx khi cầm sờ vào lò thấy tê nhẹ nên thử dùng bút thử điện thử thì thấy bút sáng không biết có ls không",
+      "label": 0,
+      "bert": 1
+    },
+    {
+      "text": "Máy này sử dụng vẫn đang bình thường",
+      "label": 2,
+      "bert": 1
+    },
+    {
+      "text": "Ko tích được điểm là sao",
+      "label": 0,
+      "bert": 1
+    },
+    {
+      "text": "Đẹp. Bị rò nước giữa phần nhựa và kim loại KHI ĐUN SÔI. Khi nước nguội thì bình thường.",
+      "label": 0,
+      "bert": 1
+    },
+    {
+      "text": "Nhận hàng thấy cối bên trong bị ướt, không biết có phải do bên điện máy rửa lại không, hộp đựng cũng không còn chắc chắn",
+      "label": 0,
+      "bert": 1
+    },
+    {
+      "text": "Tất cả đều ổn chỉ trừ lực gió mạnh quá và ồn kể cả khi bật chế độ quạt ngủ, nên lắp xong rồi mình k sử dụng trong phòng ngủ được",
+      "label": 1,
+      "bert": 2
+    },
+    {
+      "text": "Sản phẩm có thiết kế đẹp máy mạnh dễ sử dụng nhưng không thể sử dụng nhiều quá 4 lần 1 lúc máy sẽ ngắt điện nên hơi bất tiện chút",
+      "label": 0,
+      "bert": 2
+    },
+    {
+      "text": "Mã này là nhận đc quà shop",
+      "label": 1,
+      "bert": 2
+    },
+    {
+      "text": "Đã mua tv LG này và sẽ ko bao giờ quay lại vs sản phẩn nào của LG nữa.",
+      "label": 0,
+      "bert": 2
+    },
+    {
+      "text": "Hàng đúng mẫu",
+      "label": 1,
+      "bert": 2
+    },
+    {
+      "text": "nhờ ĐMX tư vấn loại máy dùng than hoạt tính, mà sp mua từ ĐMX đặt về k có 2 nắp than hoạt tính để lắp vào gọi hỗ trợ thì báo phải mua riêng, h cũng k biết mua ở đâu",
+      "label": 0,
+      "bert": 1
+    },
+    {
+      "text": "Mọi thứ đều ổn tuy nhiên chỉ có 1 điều là không hiểu làm sao thỉnh thoảng ở ngăn mát dưới chổ bỏ rau củ lại có nhiều con bồ hóng, mà chúng lại còn sống nữa chứ, mình củng có lau chùi rồi, nhưng sau vẫn có lại.",
+      "label": 0,
+      "bert": 2
+    },
+    {
+      "text": "Quạt đẹp. Mạnh. Nhưng kêu quá",
+      "label": 1,
+      "bert": 2
+    },
+    {
+      "text": "dùng 3 năm rồi vẫn chưa hỏng, lúc đầu mua về chủ yếu nấu nước tắm, nước uống. Lúc sau có máy nước nóng nên cũng ít dùng. Chân đế tiếp điện bền, dây cắm không bị nóng khi đun. Có điều dùng 1 thời gian relay không còn nhạy nữa, nước sôi rồi nhưng ko ngắt",
+      "label": 0,
+      "bert": 2
+    },
+    {
+      "text": "Nhà tôi vẫn đang sử dụng để tắm hàng ngày và máy vẫn đang chạy bình thường",
+      "label": 2,
+      "bert": 1
+    },
+    {
+      "text": "Âm thanh nghe ổn. Mà kết nối Bluetooth lúc có lúc không",
+      "label": 0,
+      "bert": 1
+    },
+    {
+      "text": "Mình muốn đổi máy khác dc k. Chính sách như thế nào . Máy mình mua chưa được 1thang",
+      "label": 0,
+      "bert": 1
+    },
+    {
+      "text": "Thiết kế đẹp, độ bền chưa biết... dùng 1 thời gian xem sao, nv phục vụ nhiệt tình, chu đáo",
+      "label": 1,
+      "bert": 2
+    }
+  ],
+  "bert_right_svm_wrong": [
+    {
+      "text": "Đồng hồ tốt, nhưng chỉ có hộp và đồng hồ. Không có sổ hướng dẫn sử dụng và thẻ bảo hành của hãng như công bố của hãng",
+      "label": 0,
+      "svm": 2
+    },
+    {
+      "text": "Sau gần 1,5 năm sử dụng, mở ra vệ sinh thì phát hiện 2 cái tấm lọc chưa bóc nilon. Thế là 1,5 năm dùng vô ích. Không biết điện máy xanh sẽ phản hồi hay có ý kiến gì về việc này.",
+      "label": 0,
+      "svm": 1
+    },
+    {
+      "text": "Pin sài lâu",
+      "label": 2,
+      "svm": 0
+    },
+    {
+      "text": "am thanh ok so voi tam giá.và ngung lưu ý cho ae dự đinh mua k có chức nang tạm dừng/phát nhạc muon dừng pai bam vao dt.k thể tloi cuộc goi hoặc tắt cuoc goi ở messenger va zalo.chỉ nhận va tắt cuoc goi o cuoc goi thông thường.còn lai thi ok hết",
+      "label": 2,
+      "svm": 1
+    },
+    {
+      "text": "Tôi thấy mat hơn quạt bình thường khác",
+      "label": 2,
+      "svm": 1
+    },
+    {
+      "text": "Tủ làm lạnh thì tốt Nhưng nghe kỹ vẫn có tiếng i i e e khó chịu",
+      "label": 0,
+      "svm": 2
+    },
+    {
+      "text": "Nhược nồi cơm điện bluestone : . Bề mặt cơm có bên nhão bên khô / chín không đều . . Đáy nồi , cơm hơi sít vàng ! Mong làm sao khắc phục 2 điểm nhược trên ! Nói vậy chắc biết khỏi chụp ảnh",
+      "label": 0,
+      "svm": 1
+    },
+    {
+      "text": "Mua dùng đc 7 ngày, pin còn 30%, các tính năng ok khi ko kết nối với đt, đi bơi lội ko bị vô nước.",
+      "label": 2,
+      "svm": 0
+    },
+    {
+      "text": "Tai nghe nghe ổn,không có mấy sự đặc biệt,bass đập không quá sâu nếu không phải là nhạc remix mà có bass trong bài hát,nhạc thuần remix thì bass lại đập rất hay Đánh giá của tôi nhiều người sẽ thấy khó hiểu nhưng nôm na là nhạc thường nhịp bass đập cùng tần số HZ với nhạc remix thì bass chán,còn bật qua nhạc remix thì bass lại hay nhưng bù lại nhạc nghe trong trẻo,không biết con 3 Pro thì thế nào,còn nghe giọng ca sĩ,cách âm và xử lý âm bass thì không hay bằng bọn Airpod,điểm hơn Airpod có lẽ là công nghệ và tính năng AI,cả cái âm 360 nữa nghe giống ngồi trong khán phòng,nói chung tôi hài lòng vì dùng chung hệ sinh thái Samsung S24 Ultra đang dùng nên càng hỗ trợ nhiều tính năng hơn nữa,à quên TGDD cho hỏi tại sao cái mục chạm để phiên dịch hội thoại qua AI nó không có trên Weareble nhỉ Quảng cáo là có mà",
+      "label": 2,
+      "svm": 1
+    },
+    {
+      "text": "Tui mua hàng đã qua sử dụng 55k gần 1 năm nay ít sử dụng nên thấy tạm ổn",
+      "label": 1,
+      "svm": 2
+    },
+    {
+      "text": "hình ảnh được, không có vấn đề",
+      "label": 2,
+      "svm": 1
+    },
+    {
+      "text": "Xài đc hơn 1 tháng mà máy báo lỗi như này là sao cách xử lý như nào Còn cái nút màu xanh cho hỏi là dùng để làm gì vậy",
+      "label": 0,
+      "svm": 1
+    },
+    {
+      "text": "Muốn mua SP này mà hỏi CSKH năm sản xuất thì chỉ trả lời qua loa thì làm sao có thể mua được",
+      "label": 0,
+      "svm": 1
+    },
+    {
+      "text": "Dây sạc lúc vào lúc ko hiện tại còn bảo hành thì đổi đc ko",
+      "label": 1,
+      "svm": 0
+    },
+    {
+      "text": "Hàng chính hãng mà do DMX bán thì ko phải bàn.",
+      "label": 2,
+      "svm": 0
+    },
+    {
+      "text": "Mình mua máy ở điện máy xanh can lộc, hà tĩnh mới được 1 tháng, thì giờ gọi bảo hành ở đâu ạ",
+      "label": 1,
+      "svm": 0
+    },
+    {
+      "text": "Cho mình hỏi làm sao để giảm âm lượng mic......nhạc thì có thể mở nhỏ đc nhưng míc thì k đc..và sao vừa dùng vừa sạc máy cứ ngắt k đủ pin quá bất tiện",
+      "label": 0,
+      "svm": 1
+    },
+    {
+      "text": "không thể tin nổi, chất lượng âm thanh quá ổn luôn, bật nhạc 8d mở maxvolum lên nhạc nó sẽ không bị quá vang như tai nghe khác, mà đồ họa âm thanh cực kì khủng luôn, nghe như mình đang trong bar ý, tui mở nhạc mà tui còn phải bỏ ra vì tui còn nhầm tưởng mình đang mở loa ngoài máy tính. quá tuyệt vời",
+      "label": 2,
+      "svm": 0
+    },
+    {
+      "text": "Quạt mạnh mẽ. Không rung lắc.",
+      "label": 2,
+      "svm": 0
+    },
+    {
+      "text": "Sau thời gian sài cảm nhận đánh giá như sauXay thịt tốt xay thử tiêu thì k nhuyễn và xay rất lâu xay cái gì mềm ok hơn cảm nhận máy hơi yếu so với công xuât công bố",
+      "label": 1,
+      "svm": 2
+    }
+  ],
+  "n_bert_right_svm_wrong": 138,
+  "n_svm_right_bert_wrong": 64,
+  "phobert_minus_svm_tfidf": {
+    "mean_diff": 0.03044534820884123,
+    "ci": [
+      0.009521064651019462,
+      0.05210338755281182
+    ],
+    "p_bert_not_better": 0.003
+  },
+  "svm_tfidf_minus_svm_bow": {
+    "mean_diff": 0.01020047238269874,
+    "ci": [
+      -0.004877421744457192,
+      0.02567455479491018
+    ]
+  }
+}

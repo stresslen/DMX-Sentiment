@@ -1,0 +1,55 @@
+phân phối train: {'dissatisfied': 11766, 'neutral': 1373, 'satisfied': 33363}
+/home/lamquy/miniconda3/lib/python3.13/site-packages/sklearn/svm/_base.py:1258: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
+/home/lamquy/miniconda3/lib/python3.13/site-packages/sklearn/svm/_base.py:1258: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
+/home/lamquy/miniconda3/lib/python3.13/site-packages/sklearn/svm/_base.py:1258: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
+/home/lamquy/miniconda3/lib/python3.13/site-packages/sklearn/svm/_base.py:1258: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
+/home/lamquy/miniconda3/lib/python3.13/site-packages/sklearn/svm/_base.py:1258: ConvergenceWarning: Liblinear failed to converge, increase the number of iterations.
+  warnings.warn(
+  Naive Bayes + BoW      Không xử lý      {'alpha': 0.1}                                  val_f1=0.7493 test_f1=0.7583 f1_TT=0.411
+  Naive Bayes + BoW      Trọng số lớp     {'alpha': 0.5}                                  val_f1=0.7495 test_f1=0.7619 f1_TT=0.416
+  Naive Bayes + BoW      Undersampling    {'alpha': 0.3} KHL=11766 / TT=1373 / HL=12000   val_f1=0.7520 test_f1=0.7506 f1_TT=0.399
+  Naive Bayes + BoW      Oversampling     {'alpha': 0.5} KHL=11766 / TT=8000 / HL=33363   val_f1=0.7609 test_f1=0.7655 f1_TT=0.435
+  Naive Bayes + BoW      Hybrid sampling  {'alpha': 0.5} KHL=11766 / TT=4000 / HL=20000   val_f1=0.7601 test_f1=0.7579 f1_TT=0.413
+> Naive Bayes + BoW: Oversampling {'alpha': 0.5} test_acc=0.9291 test_f1=0.7655
+  SVM + BoW              Không xử lý      {'kernel': 'linear', 'C': 0.3}                                  val_f1=0.8014 test_f1=0.8081 f1_TT=0.512
+  SVM + BoW              Trọng số lớp     {'kernel': 'linear', 'C': 0.03}                                  val_f1=0.8195 test_f1=0.8268 f1_TT=0.566
+  SVM + BoW              Undersampling    {'kernel': 'linear', 'C': 0.1} KHL=11766 / TT=1373 / HL=12000   val_f1=0.8041 test_f1=0.8118 f1_TT=0.533
+  SVM + BoW              Oversampling     {'kernel': 'linear', 'C': 0.1} KHL=11766 / TT=8000 / HL=33363   val_f1=0.8186 test_f1=0.8200 f1_TT=0.545
+  SVM + BoW              Hybrid sampling  {'kernel': 'linear', 'C': 0.1} KHL=11766 / TT=8000 / HL=20000   val_f1=0.8181 test_f1=0.8197 f1_TT=0.552
+> SVM + BoW: Trọng số lớp {'kernel': 'linear', 'C': 0.03} test_acc=0.9549 test_f1=0.8268
+  Naive Bayes + TF-IDF   Không xử lý      {'alpha': 0.1}                                  val_f1=0.6453 test_f1=0.6673 f1_TT=0.129
+  Naive Bayes + TF-IDF   Trọng số lớp     {'alpha': 0.1}                                  val_f1=0.7447 test_f1=0.7550 f1_TT=0.408
+  Naive Bayes + TF-IDF   Undersampling    {'alpha': 0.1} KHL=11766 / TT=1373 / HL=12000   val_f1=0.6797 test_f1=0.6720 f1_TT=0.173
+  Naive Bayes + TF-IDF   Oversampling     {'alpha': 0.5} KHL=11766 / TT=12000 / HL=33363  val_f1=0.7781 test_f1=0.7818 f1_TT=0.474
+  Naive Bayes + TF-IDF   Hybrid sampling  {'alpha': 1.0} KHL=11766 / TT=12000 / HL=20000  val_f1=0.7739 test_f1=0.7843 f1_TT=0.483
+> Naive Bayes + TF-IDF: Oversampling {'alpha': 0.5} test_acc=0.9360 test_f1=0.7818
+  SVM + TF-IDF           Không xử lý      {'kernel': 'linear', 'C': 1.0}                                  val_f1=0.7795 test_f1=0.8236 f1_TT=0.545
+  SVM + TF-IDF           Trọng số lớp     {'kernel': 'linear', 'C': 0.1}                                  val_f1=0.8068 test_f1=0.8324 f1_TT=0.589
+  SVM + TF-IDF           Undersampling    {'kernel': 'linear', 'C': 1.0} KHL=11766 / TT=1373 / HL=12000   val_f1=0.7887 test_f1=0.8174 f1_TT=0.549
+  SVM + TF-IDF           Oversampling     {'kernel': 'linear', 'C': 0.3} KHL=11766 / TT=8000 / HL=33363   val_f1=0.8229 test_f1=0.8369 f1_TT=0.591
+  SVM + TF-IDF           Hybrid sampling  {'kernel': 'linear', 'C': 0.3} KHL=11766 / TT=8000 / HL=20000   val_f1=0.8153 test_f1=0.8376 f1_TT=0.599
+> SVM + TF-IDF: Oversampling {'kernel': 'linear', 'C': 0.3} test_acc=0.9585 test_f1=0.8369
+  Naive Bayes + Word2Vec Không xử lý      {'var_smoothing': 0.1}                                  val_f1=0.5697 test_f1=0.5716 f1_TT=0.216
+  Naive Bayes + Word2Vec Trọng số lớp     {'var_smoothing': 1e-09}                                  val_f1=0.5611 test_f1=0.5708 f1_TT=0.204
+  Naive Bayes + Word2Vec Undersampling    {'var_smoothing': 0.1} KHL=11766 / TT=1373 / HL=20000   val_f1=0.5710 test_f1=0.5712 f1_TT=0.217
+  Naive Bayes + Word2Vec Oversampling     {'var_smoothing': 0.1} KHL=11766 / TT=8000 / HL=33363   val_f1=0.5683 test_f1=0.5728 f1_TT=0.223
+  Naive Bayes + Word2Vec Hybrid sampling  {'var_smoothing': 0.1} KHL=11766 / TT=4000 / HL=20000   val_f1=0.5677 test_f1=0.5713 f1_TT=0.220
+> Naive Bayes + Word2Vec: Undersampling {'var_smoothing': 0.1} test_acc=0.7495 test_f1=0.5712
+  SVM + Word2Vec         Không xử lý      {'kernel': 'rbf', 'C': 10}                                  val_f1=0.7709 test_f1=0.7807 f1_TT=0.454
+  SVM + Word2Vec         Trọng số lớp     {'kernel': 'rbf', 'C': 10}                                  val_f1=0.7722 test_f1=0.7918 f1_TT=0.488
+  SVM + Word2Vec         Undersampling    {'kernel': 'rbf', 'C': 10} KHL=11766 / TT=1373 / HL=12000   val_f1=0.7754 test_f1=0.7862 f1_TT=0.483
+  SVM + Word2Vec         Oversampling     {'kernel': 'rbf', 'C': 1} KHL=11766 / TT=8000 / HL=33363   val_f1=0.7843 test_f1=0.7855 f1_TT=0.481
+  SVM + Word2Vec         Hybrid sampling  {'kernel': 'rbf', 'C': 1} KHL=11766 / TT=8000 / HL=20000   val_f1=0.7750 test_f1=0.7855 f1_TT=0.484
+> SVM + Word2Vec: Oversampling {'kernel': 'rbf', 'C': 1} test_acc=0.9377 test_f1=0.7855
+  ablation Thô (chỉ lowercase)                 ngram=(1, 1) val_f1=0.7837 vocab=  5805 test_f1=0.7944
+  ablation Chuẩn hóa, chưa tách từ             ngram=(1, 1) val_f1=0.7868 vocab=  5009 test_f1=0.7972
+  ablation Chuẩn hóa + tách từ                 ngram=(1, 1) val_f1=0.7894 vocab=  7252 test_f1=0.7866
+  ablation Chuẩn hóa + tách từ + bỏ stopword   ngram=(1, 1) val_f1=0.7596 vocab=  7146 test_f1=0.7627
+  ablation Thô (chỉ lowercase)                 ngram=(1, 2) val_f1=0.8112 vocab= 77843 test_f1=0.8304
+  ablation Chuẩn hóa, chưa tách từ             ngram=(1, 2) val_f1=0.8188 vocab= 72334 test_f1=0.8295
+  ablation Chuẩn hóa + tách từ                 ngram=(1, 2) val_f1=0.8037 vocab= 73462 test_f1=0.8288
+  ablation Chuẩn hóa + tách từ + bỏ stopword   ngram=(1, 2) val_f1=0.7991 vocab= 59135 test_f1=0.7899

@@ -1,0 +1,13 @@
+numpy
+pandas
+pyarrow
+scikit-learn>=1.5
+matplotlib
+joblib
+pyvi==0.1.1
+gensim>=4.3
+torch>=2.1
+transformers>=4.45
+datasets>=3.0
+accelerate>=0.30
+pypandoc_binary      # chỉ cần cho tools/fix_docx_equations.py

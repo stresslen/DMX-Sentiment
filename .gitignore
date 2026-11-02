@@ -1,0 +1,17 @@
+# Môi trường, cache
+.venv/
+__pycache__/
+*.pyc
+*.whl
+
+# Dữ liệu (tải/giải nén riêng)
+*.zip
+data/
+
+# Kết quả trung gian và mô hình (tạo lại bằng các script trong src/)
+outputs/processed/
+outputs/models/
+
+# Báo cáo
+*.docx
+~$*
