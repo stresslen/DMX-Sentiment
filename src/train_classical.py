@@ -20,13 +20,13 @@ from sklearn.svm import SVC, LinearSVC
 
 from imbalance import class_counts, describe, resample_index, sampling_grid
 from plot_style import grouped_bars, plot_confusion
-from text_utils import ROOT
+from text_utils import OUT
 
 SEED = 42
-PROC = ROOT / "outputs" / "processed"
-MET = ROOT / "outputs" / "metrics"
-FIG = ROOT / "outputs" / "figures"
-MOD = ROOT / "outputs" / "models"
+PROC = OUT / "processed"
+MET = OUT / "metrics"
+FIG = OUT / "figures"
+MOD = OUT / "models"
 LABEL_NAMES = ["dissatisfied", "neutral", "satisfied"]
 N_JOBS = 8  # số tiến trình song song khi thử lưới (SVM-RBF chậm)
 

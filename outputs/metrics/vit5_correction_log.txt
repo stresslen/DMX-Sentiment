@@ -1,0 +1,7 @@
+Naive Bayes + BoW        [0.7655, 0.7651] delta CI [-0.0122, +0.0119]
+SVM + BoW                [0.8268, 0.8218] delta CI [-0.0162, +0.0064]
+Naive Bayes + TF-IDF     [0.7818, 0.7775] delta CI [-0.0168, +0.0082]
+SVM + TF-IDF             [0.8369, 0.8389] delta CI [-0.0119, +0.0157]
+Naive Bayes + Word2Vec   [0.5712, 0.5809] delta CI [+0.0000, +0.0197]
+SVM + Word2Vec           [0.7855, 0.7922] delta CI [-0.0152, +0.0281]
+PhoBERT                  [0.8674, 0.8586] delta CI [-0.0247, +0.0057]

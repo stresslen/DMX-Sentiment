@@ -4,10 +4,12 @@ from multiprocessing import Pool
 
 import pandas as pd
 
-from text_utils import ROOT, clean_tokens, load_stopwords, normalize, segment
+from difflib import SequenceMatcher
+
+from text_utils import OUT, ROOT, VIT5, clean_tokens, load_stopwords, normalize, segment
 
 DATA_DIR = ROOT / "data" / "DMX-Sentiment-v1" / "parquet"
-OUT_DIR = ROOT / "outputs" / "processed"
+OUT_DIR = OUT / "processed"
 SPLITS = ("train", "validation", "test")
 
 
@@ -23,6 +25,10 @@ def main():
     stats = {}
     for split in SPLITS:
         df = pd.read_parquet(DATA_DIR / f"{split}.parquet")[["id", "text", "label", "label_name", "category"]]
+        if VIT5:  # thay văn bản gốc bằng bản ViT5 đã sửa chính tả, giữ bản gốc ở cột text_orig
+            from vit5_correction import load_corrected
+            df["text_orig"] = df["text"]
+            df["text"] = load_corrected(split, df)
         with Pool() as pool:
             norm, seg = zip(*pool.map(process_one, df["text"], chunksize=500))
         df["text_norm"] = norm                      # đã chuẩn hóa, chưa tách từ
@@ -41,6 +47,10 @@ def main():
             "avg_words_no_stopword": round(n_tok.mean(), 2),
             "empty_after_stopword": int((n_tok == 0).sum()),
         }
+        if VIT5:
+            stats[split]["vit5_changed_share"] = float((df["text"] != df["text_orig"]).mean())
+            stats[split]["vit5_char_similarity"] = float(pd.Series(
+                [SequenceMatcher(None, a, b).ratio() for a, b in zip(df["text_orig"], df["text"])]).mean())
         print(split, stats[split])
 
     vocab_all = {w for s in pd.read_parquet(OUT_DIR / "train.parquet")["tokens_all"] for w in s.split()}

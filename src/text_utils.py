@@ -1,11 +1,17 @@
 """Tiện ích tiền xử lý văn bản tiếng Việt cho bài toán phân loại cảm xúc bình luận."""
 import re
+import sys
 import unicodedata
 from pathlib import Path
 
 from pyvi import ViTokenizer
 
 ROOT = Path(__file__).resolve().parents[1]
+# --vit5: chạy pipeline trên dữ liệu đã sửa chính tả bằng ViT5 (cả train/validation/test), kết quả ghi vào outputs/vit5/
+VIT5 = "--vit5" in sys.argv
+OUT_ORIG = ROOT / "outputs"
+OUT_VIT5 = OUT_ORIG / "vit5"
+OUT = OUT_VIT5 if VIT5 else OUT_ORIG
 STOPWORD_FILE = ROOT / "resources" / "vietnamese_stopwords.txt"
 
 # Chuẩn hóa kiểu bỏ dấu cũ -> mới (hoà -> hòa, thuý -> thúy, ...)

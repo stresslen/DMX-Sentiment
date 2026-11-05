@@ -1,0 +1,14 @@
+  ViT5 0/47634 đoạn
+  ViT5 6400/47634 đoạn
+  ViT5 12800/47634 đoạn
+  ViT5 19200/47634 đoạn
+  ViT5 25600/47634 đoạn
+  ViT5 32000/47634 đoạn
+  ViT5 38400/47634 đoạn
+  ViT5 44800/47634 đoạn
+ViT5 train: 46502 câu, 47634 đoạn, 2176 giây
+train {'rows': 46502, 'avg_syllables_raw': np.float64(20.79), 'avg_words_segmented': np.float64(17.66), 'avg_words_no_stopword': np.float64(13.23), 'empty_after_stopword': 11, 'vit5_changed_share': 0.4239172508709303, 'vit5_char_similarity': 0.9807978529240283}
+  ViT5 0/5919 đoạn
+ViT5 validation: 5813 câu, 5919 đoạn, 251 giây
+validation {'rows': 5813, 'avg_syllables_raw': np.float64(19.41), 'avg_words_segmented': np.float64(16.5), 'avg_words_no_stopword': np.float64(12.43), 'empty_after_stopword': 4, 'vit5_changed_share': 0.41011525890246, 'vit5_char_similarity': 0.980173707932652}
+test {'rows': 5813, 'avg_syllables_raw': np.float64(20.78), 'avg_words_segmented': np.float64(17.67), 'avg_words_no_stopword': np.float64(13.16), 'empty_after_stopword': 2, 'vit5_changed_share': 0.4094271460519525, 'vit5_char_similarity': 0.9818005298597812}

@@ -1,0 +1,19 @@
+                 model  f1_macro  ci_low  ci_high  f1_dissatisfied  f1_neutral  f1_satisfied
+               PhoBERT    0.8586  0.8373   0.8792           0.9536      0.6350        0.9872
+          SVM + TF-IDF    0.8389  0.8168   0.8608           0.9373      0.6006        0.9789
+             SVM + BoW    0.8218  0.7993   0.8437           0.9316      0.5581        0.9758
+        SVM + Word2Vec    0.7922  0.7665   0.8157           0.9120      0.4946        0.9700
+  Naive Bayes + TF-IDF    0.7775  0.7538   0.7994           0.8915      0.4749        0.9659
+     Naive Bayes + BoW    0.7651  0.7429   0.7857           0.8961      0.4340        0.9653
+Naive Bayes + Word2Vec    0.5809  0.5636   0.5980           0.6740      0.2222        0.8464
+PhoBERT - SVM+TF-IDF: {'mean_diff': 0.019503518560918635, 'ci': [-0.00245820358456095, 0.03968305233379662], 'p_bert_not_better': 0.043} 
+SVM TF-IDF - SVM BoW: {'mean_diff': 0.01706148381956937, 'ci': [0.002004459360771327, 0.03216034937556371]}
+strategy                Hybrid sampling  Không xử lý  Oversampling  Trọng số lớp  Undersampling
+model                                                                                          
+Naive Bayes + BoW                 0.755        0.755         0.765         0.760          0.751
+Naive Bayes + TF-IDF              0.775        0.663         0.777         0.747          0.666
+Naive Bayes + Word2Vec            0.579        0.581         0.577         0.574          0.579
+PhoBERT                             NaN        0.859         0.863         0.859            NaN
+SVM + BoW                         0.821        0.806         0.827         0.822          0.823
+SVM + TF-IDF                      0.826        0.826         0.839         0.820          0.815
+SVM + Word2Vec                    0.785        0.790         0.785         0.778          0.792

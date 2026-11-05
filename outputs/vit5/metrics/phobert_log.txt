@@ -1,0 +1,58 @@
+Map:   0%|          | 0/46502 [00:00<?, ? examples/s]Map:   4%|▍         | 2000/46502 [00:00<00:03, 14703.88 examples/s]Map:   9%|▊         | 4000/46502 [00:00<00:02, 16525.27 examples/s]Map:  13%|█▎        | 6000/46502 [00:00<00:02, 17631.68 examples/s]Map:  17%|█▋        | 8000/46502 [00:00<00:02, 18215.00 examples/s]Map:  22%|██▏       | 10000/46502 [00:00<00:01, 18535.64 examples/s]Map:  26%|██▌       | 12000/46502 [00:00<00:01, 18841.88 examples/s]Map:  30%|███       | 14000/46502 [00:00<00:01, 18860.52 examples/s]Map:  34%|███▍      | 16000/46502 [00:00<00:01, 19153.68 examples/s]Map:  39%|███▊      | 18000/46502 [00:00<00:01, 19349.81 examples/s]Map:  43%|████▎     | 20000/46502 [00:01<00:01, 19297.81 examples/s]Map:  47%|████▋     | 22000/46502 [00:01<00:01, 19239.86 examples/s]Map:  52%|█████▏    | 24000/46502 [00:01<00:01, 19076.24 examples/s]Map:  56%|█████▌    | 26000/46502 [00:01<00:01, 19267.68 examples/s]Map:  60%|██████    | 28000/46502 [00:01<00:00, 19285.68 examples/s]Map:  65%|██████▍   | 30000/46502 [00:01<00:00, 19076.01 examples/s]Map:  69%|██████▉   | 32000/46502 [00:01<00:00, 19262.18 examples/s]Map:  73%|███████▎  | 34000/46502 [00:01<00:00, 19239.26 examples/s]Map:  80%|███████▉  | 37000/46502 [00:01<00:00, 19187.96 examples/s]Map:  84%|████████▍ | 39000/46502 [00:02<00:00, 19251.98 examples/s]Map:  88%|████████▊ | 41000/46502 [00:02<00:00, 19038.34 examples/s]Map:  92%|█████████▏| 43000/46502 [00:02<00:00, 18659.67 examples/s]Map:  97%|█████████▋| 45000/46502 [00:02<00:00, 18896.13 examples/s]Map: 100%|██████████| 46502/46502 [00:02<00:00, 18873.75 examples/s]
+Map:   0%|          | 0/5813 [00:00<?, ? examples/s]Map:  34%|███▍      | 2000/5813 [00:00<00:00, 15304.08 examples/s]Map:  69%|██████▉   | 4000/5813 [00:00<00:00, 16698.92 examples/s]Map: 100%|██████████| 5813/5813 [00:00<00:00, 17154.78 examples/s]
+Map:   0%|          | 0/5813 [00:00<?, ? examples/s]Map:  34%|███▍      | 2000/5813 [00:00<00:00, 16030.55 examples/s]Map:  69%|██████▉   | 4000/5813 [00:00<00:00, 10735.18 examples/s]Map: 100%|██████████| 5813/5813 [00:00<00:00, 12857.53 examples/s]Map: 100%|██████████| 5813/5813 [00:00<00:00, 12653.90 examples/s]
+subword length: mean=22.5 p95=65 truncated=0.17%
+class weights: [1.1477855443954468, 3.3600049018859863, 0.6816204786300659]
+=== Không xử lý: 46502 mẫu train, phân phối [11766, 1373, 33363]
+Some weights of RobertaForSequenceClassification were not initialized from the model checkpoint at vinai/phobert-base-v2 and are newly initialized: ['classifier.dense.bias', 'classifier.dense.weight', 'classifier.out_proj.bias', 'classifier.out_proj.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+                                               [A{'eval_loss': 0.12492960691452026, 'eval_f1_macro': 0.8143336670784135, 'eval_runtime': 2.7006, 'eval_samples_per_second': 2152.504, 'eval_steps_per_second': 17.033, 'epoch': 1.0}
+                                               [A{'eval_loss': 0.10145344585180283, 'eval_f1_macro': 0.8499420037955973, 'eval_runtime': 2.6254, 'eval_samples_per_second': 2214.146, 'eval_steps_per_second': 17.521, 'epoch': 2.0}
+                                               [A{'eval_loss': 0.10379820317029953, 'eval_f1_macro': 0.8644916663019582, 'eval_runtime': 2.7047, 'eval_samples_per_second': 2149.216, 'eval_steps_per_second': 17.007, 'epoch': 3.0}
+                                               [A{'eval_loss': 0.12031606584787369, 'eval_f1_macro': 0.8606152330547276, 'eval_runtime': 2.6955, 'eval_samples_per_second': 2156.588, 'eval_steps_per_second': 17.066, 'epoch': 4.0}
+                                               [A                                                   {'train_runtime': 448.0692, 'train_samples_per_second': 415.132, 'train_steps_per_second': 12.98, 'train_loss': 0.10565456064441017, 'epoch': 4.0}
+{'model': 'PhoBERT', 'strategy': 'Không xử lý', 'sampling': '', 'val_f1_macro': 0.8644916663019582, 'fit_seconds': 449.51986169815063, 'accuracy': 0.9685188370892827, 'f1_macro': 0.8585897457014197, 'f1_neutral': np.float64(0.6350148367952523), 'recall_neutral': np.float64(0.622093023255814), 'f1_dissatisfied': np.float64(0.953551912568306), 'f1_satisfied': np.float64(0.9872024877407009)}
+=== Trọng số lớp: 46502 mẫu train, phân phối [11766, 1373, 33363]
+Some weights of RobertaForSequenceClassification were not initialized from the model checkpoint at vinai/phobert-base-v2 and are newly initialized: ['classifier.dense.bias', 'classifier.dense.weight', 'classifier.out_proj.bias', 'classifier.out_proj.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+                                               [A                                                   {'eval_loss': 0.25378096103668213, 'eval_f1_macro': 0.8506706854131804, 'eval_runtime': 2.7112, 'eval_samples_per_second': 2144.07, 'eval_steps_per_second': 16.967, 'epoch': 1.0}
+
+                                               [A                                                   {'eval_loss': 0.19391804933547974, 'eval_f1_macro': 0.8628256830875447, 'eval_runtime': 2.6238, 'eval_samples_per_second': 2215.508, 'eval_steps_per_second': 17.532, 'epoch': 2.0}
+
+                                               [A{'eval_loss': 0.24342219531536102, 'eval_f1_macro': 0.8567206318167561, 'eval_runtime': 2.7189, 'eval_samples_per_second': 2137.999, 'eval_steps_per_second': 16.919, 'epoch': 3.0}
+                                               [A                                                   {'eval_loss': 0.28554269671440125, 'eval_f1_macro': 0.8612965513824903, 'eval_runtime': 2.6998, 'eval_samples_per_second': 2153.097, 'eval_steps_per_second': 17.038, 'epoch': 4.0}
+
+                                               [A                                                   {'train_runtime': 452.0802, 'train_samples_per_second': 411.449, 'train_steps_per_second': 12.865, 'train_loss': 0.18203353646122933, 'epoch': 4.0}
+{'model': 'PhoBERT', 'strategy': 'Trọng số lớp', 'sampling': '', 'val_f1_macro': 0.8628256830875447, 'fit_seconds': 453.5462465286255, 'accuracy': 0.9659384138998796, 'f1_macro': 0.8592304723669401, 'f1_neutral': np.float64(0.6408839779005525), 'recall_neutral': np.float64(0.6744186046511628), 'f1_dissatisfied': np.float64(0.9518900343642611), 'f1_satisfied': np.float64(0.9849174048360066)}
+=== Oversampling: 49129 mẫu train, phân phối [11766, 4000, 33363]
+Some weights of RobertaForSequenceClassification were not initialized from the model checkpoint at vinai/phobert-base-v2 and are newly initialized: ['classifier.dense.bias', 'classifier.dense.weight', 'classifier.out_proj.bias', 'classifier.out_proj.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+                                               [A{'eval_loss': 0.12126731127500534, 'eval_f1_macro': 0.8461312701800883, 'eval_runtime': 2.8392, 'eval_samples_per_second': 2047.403, 'eval_steps_per_second': 16.202, 'epoch': 1.0}
+                                               [A{'eval_loss': 0.12578189373016357, 'eval_f1_macro': 0.8386953355201344, 'eval_runtime': 2.6832, 'eval_samples_per_second': 2166.435, 'eval_steps_per_second': 17.144, 'epoch': 2.0}
+                                               [A{'eval_loss': 0.12483233958482742, 'eval_f1_macro': 0.858963954992555, 'eval_runtime': 2.6893, 'eval_samples_per_second': 2161.541, 'eval_steps_per_second': 17.105, 'epoch': 3.0}
+                                               [A{'eval_loss': 0.14635008573532104, 'eval_f1_macro': 0.8566831456562204, 'eval_runtime': 2.6316, 'eval_samples_per_second': 2208.947, 'eval_steps_per_second': 17.48, 'epoch': 4.0}
+                                               [A                                                   {'train_runtime': 472.842, 'train_samples_per_second': 415.606, 'train_steps_per_second': 12.994, 'train_loss': 0.11787527324243759, 'epoch': 4.0}
+{'model': 'PhoBERT', 'strategy': 'Oversampling', 'sampling': 'KHL=11766 / TT=4000 / HL=33363', 'val_f1_macro': 0.858963954992555, 'fit_seconds': 475.1263656616211, 'accuracy': 0.968174780664029, 'f1_macro': 0.8625922381124501, 'f1_neutral': np.float64(0.6473988439306358), 'recall_neutral': np.float64(0.6511627906976745), 'f1_dissatisfied': np.float64(0.9539091840218504), 'f1_satisfied': np.float64(0.9864686863848641)}
+{
+  "model": "PhoBERT-base-v2 (fine-tune)",
+  "feature": "Contextual embeddings",
+  "val_f1_macro": 0.8644916663019582,
+  "fit_seconds": 449.51986169815063,
+  "test_inference_seconds": 10.480833530426025,
+  "imbalance_strategy": "Không xử lý",
+  "best_params": {
+    "lr": 2e-05,
+    "epochs": 4,
+    "batch": 32,
+    "max_len": 256,
+    "class_weights": null,
+    "neutral_oversample_to": null
+  },
+  "accuracy": 0.9685188370892827,
+  "precision_macro": 0.8637823934577592,
+  "recall_macro": 0.8535985162196709,
+  "f1_macro": 0.8585897457014197,
+  "precision_weighted": 0.9680498787597707,
+  "recall_weighted": 0.9685188370892827,
+  "f1_weighted": 0.9682662634088223
+}

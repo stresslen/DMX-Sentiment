@@ -18,17 +18,17 @@ from transformers import (AutoModelForSequenceClassification, AutoTokenizer, Dat
                           Trainer, TrainingArguments, set_seed)
 
 from plot_style import SERIES, TEXT, TEXT_2, plot_confusion, plt
-from text_utils import ROOT
+from text_utils import OUT
 from imbalance import NEUTRAL, describe, resample_index, sqrt_inverse_weights
 from train_classical import LABEL_NAMES, compute_metrics, paired_bootstrap_delta
 
 MODEL_NAME = "vinai/phobert-base-v2"
 MAX_LEN = 256
 SEED = 42
-PROC = ROOT / "outputs" / "processed"
-MET = ROOT / "outputs" / "metrics"
-FIG = ROOT / "outputs" / "figures"
-CKPT = ROOT / "outputs" / "models" / "phobert"
+PROC = OUT / "processed"
+MET = OUT / "metrics"
+FIG = OUT / "figures"
+CKPT = OUT / "models" / "phobert"
 
 
 class WeightedTrainer(Trainer):

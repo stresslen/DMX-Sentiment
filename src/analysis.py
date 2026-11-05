@@ -7,18 +7,18 @@ import pandas as pd
 from sklearn.metrics import f1_score
 
 from plot_style import ci_dotplot, confusion_grid, grouped_bars
-from text_utils import ROOT
+from text_utils import OUT
 from train_classical import LABEL_NAMES, STRATEGIES, MeanWord2Vec  # noqa: F401  (cần để joblib nạp Word2Vec)
 
-FIG = ROOT / "outputs" / "figures"
-PROC = ROOT / "outputs" / "processed"
-MET = ROOT / "outputs" / "metrics"
-MOD = ROOT / "outputs" / "models"
+FIG = OUT / "figures"
+PROC = OUT / "processed"
+MET = OUT / "metrics"
+MOD = OUT / "models"
 N_BOOT = 2000
 
 
-def predict_classical(slug, texts):
-    bundle = joblib.load(MOD / f"{slug}.joblib")
+def predict_classical(slug, texts, mod=MOD):
+    bundle = joblib.load(mod / f"{slug}.joblib")
     vec = bundle["vectorizer"]
     if isinstance(vec, tuple):  # (Word2Vec, StandardScaler)
         X = vec[1].transform(vec[0].transform(texts))

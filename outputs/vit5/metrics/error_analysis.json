@@ -1,0 +1,256 @@
+{
+  "phobert_error_pairs": {
+    "dissatisfied->neutral": 42,
+    "neutral->dissatisfied": 34,
+    "dissatisfied->satisfied": 33,
+    "neutral->satisfied": 31,
+    "satisfied->dissatisfied": 27,
+    "satisfied->neutral": 16
+  },
+  "phobert_errors": [
+    {
+      "text": "Tôi có mua con này tháng, nay nhượng lại vì tôi mua iPhone 16 rồi. xxxxNUMBER>",
+      "label": 1,
+      "bert": 2
+    },
+    {
+      "text": "Mặt bếp không được chắc chắn lắm thép hơi mỏng đầu đốt gas tạm được",
+      "label": 0,
+      "bert": 1
+    },
+    {
+      "text": "Bảo hành quá khứ",
+      "label": 0,
+      "bert": 2
+    },
+    {
+      "text": "Mới nhận hàng lúc sáng. Và hiện tại ngăn đá thì làm lạnh tốt. Còn ngăn mát thì không thấy làm lạnh. Mong sớm được hỗ trợ",
+      "label": 0,
+      "bert": 1
+    },
+    {
+      "text": "Em vừa mua xong, loại đắt nhất ở đám cưới em hy vọng mọi thứ tốt lành, hy vọng bạn ý sẽ gắn bó với vợ mình lâu dài",
+      "label": 1,
+      "bert": 2
+    },
+    {
+      "text": "Máy hơi ồn và khá nhỏ nên lúc sấy tóc bị vướng hút vào trong",
+      "label": 1,
+      "bert": 0
+    },
+    {
+      "text": "Yếu tố lâu",
+      "label": 0,
+      "bert": 1
+    },
+    {
+      "text": "Dễ cháy",
+      "label": 2,
+      "bert": 0
+    },
+    {
+      "text": "Quạt hơi ồn, mát, dịch vụ bật",
+      "label": 1,
+      "bert": 2
+    },
+    {
+      "text": "Thiết kế đẹp, độ bền chưa biết. . . dùng 1 thời gian xem sao, nv phục vụ nhiệt tình, chu đáo",
+      "label": 1,
+      "bert": 2
+    },
+    {
+      "text": "Sao khi nồi đậy nắp bị bấp bệnh vậy. cho em hỏi do thiết kế vậy hay là do spham bị lỗi",
+      "label": 1,
+      "bert": 0
+    },
+    {
+      "text": "Lúc đầu ok lắm giờ Cháo thành cơm chưa có thời gian đi sửa",
+      "label": 0,
+      "bert": 1
+    },
+    {
+      "text": "Tủ sài êm 10 ngày đầu. Tủ có lúc chạy rất ồn mở cửa ngăn đá nghe như máy dầu chạy, rút điện để khoảng 15 phút ghim lại thì chạy êm",
+      "label": 0,
+      "bert": 2
+    },
+    {
+      "text": "Dùng tạm được",
+      "label": 2,
+      "bert": 1
+    },
+    {
+      "text": "Sao sắc lâu mà vẫn bảo đen đỏ vậy",
+      "label": 1,
+      "bert": 0
+    },
+    {
+      "text": "Không được đổi trả là sao vậy",
+      "label": 0,
+      "bert": 1
+    },
+    {
+      "text": "Bếp tốt. Nhưng lắp đặt không hỗ trợ cắt gạch bếp",
+      "label": 0,
+      "bert": 2
+    },
+    {
+      "text": "Máy dễ xài thiết kế đẹp máy xài được vài lần thấy được ok nhưng về lâu về dài thì không biết sao không biết có giống phong cách phục vụ của điện máy xanh càng ngày càng đi xuống hay không",
+      "label": 1,
+      "bert": 2
+    },
+    {
+      "text": "Sản phẩm tốt , nhưng Điện Máy Xanh cứ gửi tin nhắn Zalo mỗi ngày , để kêu mình đánh giá sản phẩm . Rất là phiền phức . ĐMX nên xem lại cách điều hành",
+      "label": 2,
+      "bert": 0
+    },
+    {
+      "text": "Cảm ứng dân tình tê, không cần cúi người xuống",
+      "label": 2,
+      "bert": 0
+    },
+    {
+      "text": "Máy chạy yếu, ồn . Mới xây lần đầu bị khét với bốc khói mang ra ràx đổi cái mới về xây đúc vài lần lại bị. Mình đã đổi sang máy hãng Media (ngày là mất phí 20% nhé), chưa xài nên ko biết sao, hi vọng chạy tốt. Về phần điện máy xanh chăm sóc khách hàng rất tốt.",
+      "label": 0,
+      "bert": 2
+    },
+    {
+      "text": "Thiết kế đẹp, hình ảnh trung bình, loa tv khá nhỏ ( so với tv cùng tầm) viền hở sáng rất rõ, màn hình hay giặt giặt khi kết nối thiết bị chơi game dù hdmi loại xịn. Hàng mới bảo hành 2 năm, giá cũng tạm chấp nhận được, đó là đánh thực tế của mình khi mua tv ngày 17/11 đến nay.",
+      "label": 0,
+      "bert": 2
+    },
+    {
+      "text": "Đun khá lâu nước mới sôi, có cảm giác nước sôi nhưng không nóng bằng loại bình đun khác",
+      "label": 0,
+      "bert": 1
+    },
+    {
+      "text": "Chăm sóc KH tận tình",
+      "label": 2,
+      "bert": 0
+    },
+    {
+      "text": "Mới mua về xạc đọc 2 lần, lần nào cũng xạc gần 20 tiếng nhưng vẫn 50% pin , mong đọc ĐMX hỗ trợ ạ",
+      "label": 0,
+      "bert": 1
+    }
+  ],
+  "bert_right_svm_wrong": [
+    {
+      "text": "đã sử dụng được 10 ngày từ khi mua, dùng cũng được, chưa gặp vấn đề gì, ai dùng để coi Youtube hoặc kênh truyền hình như nhà mình thì cứ thế mà dùng, còn ai muốn dùng để chơi game hay tải những ứng dụng có dung lượng cao thì cần mua thêm cái Box TV để sử dụng thêm, cho nó mượt mà hơn tránh bị giật lag, hoặc bị Out ra khi đang sử dụng :)",
+      "label": 2,
+      "svm": 0
+    },
+    {
+      "text": "Cho em hỏi kính mặt dưới cùng loại sapphire hay sao ạ. Đẹp,nhỏ gọn,nhân viên nhiệt tình. Vừa mua chưa biết giờ có chính xác không.",
+      "label": 2,
+      "svm": 1
+    },
+    {
+      "text": "Mới đầu mình cứ nghĩ là công xuất 600w sao nghe nhỏ vậy mà rõ ràng téc hết công xuất . nhưng do máy điện thoại của mình Oppo cũ quá lên không bắt được hết các kênh . mình chuyển thử sang. Bluetooth. thì đúng là to rõ hay hơn nhiều và công suất 600w mình nghĩ là hợp lý . vì công nghệ Bluetooth là 4. 0 và 5. 0 mình thấy bộ này xứng đáng nhé. . .",
+      "label": 2,
+      "svm": 0
+    },
+    {
+      "text": "55w mà sao thấy yếu quá, phải bật mức số 3 thì mới thấy có lực một tí. Không biết có phải lỗi không nữa hay do công suất nó như vậy là hết mức.",
+      "label": 0,
+      "svm": 1
+    },
+    {
+      "text": "âm thanh ok so với tầm giá. và ngừng lưu ý cho ae dự định mua ko có chức năng tạm dừng/phát nhạc muốn dừng phải bấm vào đây. k thể tloi cuộc gọi hoặc tắt cuộc gọi ở messenger và zalo. chỉ nhận và tắt cuộc gọi ở cuộc gọi thông thường. còn lại thì ok hết",
+      "label": 2,
+      "svm": 1
+    },
+    {
+      "text": "Bếp ga có lửa đỏ . Yêu cầu đến bảo hành",
+      "label": 0,
+      "svm": 1
+    },
+    {
+      "text": "Bắt kết nối ổn. Đôi lúc khi kết nối bluetooth vào điện thoại phải tắt tính năng của mic. Máy tính thì nhận được cả mic khi kết nối bluetooth.",
+      "label": 2,
+      "svm": 0
+    },
+    {
+      "text": "Tôi mới dùng nhưng thấy ưa thích sao này, dễ cho qua vào, dễ lấy qua ra, tiếng việt nên dùng tiện. Nhưng chưa rõ máy này sx tại đâu mà in chữ tiếng việt",
+      "label": 2,
+      "svm": 1
+    },
+    {
+      "text": "Mua về đọc 2 ngày thì hư phải đổi lỗi . Được cái gọi bảo hành xuống liền nên cho hẳn 5 sao . Máy chạy êm , tốt .",
+      "label": 2,
+      "svm": 0
+    },
+    {
+      "text": "Bạn gắn lõi rất dễ thương, gọi điện thoại là tới liền ko để khách đợi lâu",
+      "label": 2,
+      "svm": 0
+    },
+    {
+      "text": "Mới mua được 2 ngày, pin khá trâu, nghe đã tai. Điểm yếu duy nhất là phần nắp hộp sạc hơi lỏng",
+      "label": 2,
+      "svm": 0
+    },
+    {
+      "text": "Mua xong thì k mất điện nữa",
+      "label": 2,
+      "svm": 0
+    },
+    {
+      "text": "Chống đồ kéo kéo tốt. nghe bình thường",
+      "label": 1,
+      "svm": 2
+    },
+    {
+      "text": "Ngắn gọn:5 sao v. v",
+      "label": 2,
+      "svm": 1
+    },
+    {
+      "text": "Áp mã giảm giá mà nhân viên siêu thị vẫn thu tiền full",
+      "label": 0,
+      "svm": 2
+    },
+    {
+      "text": "quạt tản nhiệt kêu khá to",
+      "label": 0,
+      "svm": 2
+    },
+    {
+      "text": "Phải nặng cả kg chứ ko phải 0. 5kg như trong mô tả đâu nhé em, cầm lên nặng mỏi cả tay. Tất nhiên loại cầm tay thì dung tích chứa nước nhỏ, mình ủi cái chân váy dài phải đổ 3 lần nước mới đủ. Hơi nóng ở mức vừa phải chứ ko phải nóng bỏng tay như bàn ủi thường. Được cái tiện vì ủi những cái như váy của nữ rất hợp lý và dễ mang theo.",
+      "label": 2,
+      "svm": 1
+    },
+    {
+      "text": "Sạc nhanh. Không bị quá nóng khi sạc. Sạc đồng thời được cho S23 và S23U mà không bị sụt dòng. Nếu cắm S23U vào cổng TypeC 1 trước, sau đó cắm S23 vào cổng TypeC thì sạc sẽ tạm ngắt rồi bật lại để phân chia lại dòng sạc. Nếu cắm S23 vào cổng typeC 2 trước, sau đó cắm S23U vào cổng typeC 1 sau, thì sạc sẽ liên tục bình thường, không bị phân lại dòng sạc.",
+      "label": 2,
+      "svm": 0
+    },
+    {
+      "text": "Máy nước nóng nhà tôi vẫn đang sử dụng bình thường",
+      "label": 2,
+      "svm": 1
+    },
+    {
+      "text": "Nấu cơm 2 đến 4 người ăn rất vừa",
+      "label": 2,
+      "svm": 0
+    }
+  ],
+  "n_bert_right_svm_wrong": 140,
+  "n_svm_right_bert_wrong": 74,
+  "phobert_minus_svm_tfidf": {
+    "mean_diff": 0.019503518560918635,
+    "ci": [
+      -0.00245820358456095,
+      0.03968305233379662
+    ],
+    "p_bert_not_better": 0.043
+  },
+  "svm_tfidf_minus_svm_bow": {
+    "mean_diff": 0.01706148381956937,
+    "ci": [
+      0.002004459360771327,
+      0.03216034937556371
+    ]
+  }
+}

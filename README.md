@@ -35,7 +35,17 @@ python preprocess.py              # tiền xử lý dữ liệu (~5 giây)
 python train_classical.py         # Naive Bayes, SVM (~15 phút, CPU)
 python train_phobert.py           # fine-tune PhoBERT (~30 phút, GPU)
 python analysis.py                # tổng hợp, so sánh mô hình (~1 phút)
-python vit5_test_correction.py    # tùy chọn: sửa lỗi tập test bằng ViT5 (~8 phút, GPU)
+```
+
+Tùy chọn: sửa lỗi chính tả cả 3 tập train/validation/test bằng ViT5 rồi huấn luyện lại toàn bộ mô hình.
+Cờ `--vit5` ghi mọi kết quả vào `outputs/vit5/`, không đụng tới kết quả gốc trong `outputs/`:
+
+```bash
+python preprocess.py --vit5       # ViT5 sửa 3 tập (~1 giờ GPU, có cache) rồi tiền xử lý
+python train_classical.py --vit5
+python train_phobert.py --vit5
+python analysis.py --vit5
+python vit5_correction.py         # so sánh dữ liệu gốc với dữ liệu đã sửa bằng ViT5
 ```
 
 Dự đoán thử một câu (cần chạy xong `train_classical.py` và `train_phobert.py`):
@@ -49,3 +59,4 @@ python predict.py "Máy giặt chạy êm, giao hàng nhanh"
 - `outputs/metrics/`: bảng kết quả và log
 - `outputs/figures/`: biểu đồ
 - `outputs/models/`: mô hình đã huấn luyện (tạo ra khi chạy, không có trong repo)
+- `outputs/vit5/`: các kết quả trên của thí nghiệm sửa chính tả bằng ViT5

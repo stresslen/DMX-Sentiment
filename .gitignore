@@ -11,6 +11,8 @@ data/
 # Kết quả trung gian và mô hình (tạo lại bằng các script trong src/)
 outputs/processed/
 outputs/models/
+outputs/vit5/processed/
+outputs/vit5/models/
 
 # Báo cáo
 *.docx

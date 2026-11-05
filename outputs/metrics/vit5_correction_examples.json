@@ -1,43 +1,62 @@
 {
-  "stats": {
-    "corrector": "protonx-models/protonx-legal-tc",
-    "num_beams": 10,
-    "pieces": null,
-    "seconds": null,
-    "noisy_share": 0.29434027180457595,
-    "changed_share_all": 0.4094271460519525,
-    "changed_share_noisy": 0.8094681472822911,
-    "changed_share_clean": 0.24256460263286203,
-    "mean_char_similarity": 0.9818005298597812
+  "corrector": "protonx-models/protonx-legal-tc",
+  "num_beams": 10,
+  "correction_stats": {
+    "train": {
+      "vit5_changed_share": 0.4239172508709303,
+      "vit5_char_similarity": 0.9807978529240283
+    },
+    "validation": {
+      "vit5_changed_share": 0.41011525890246,
+      "vit5_char_similarity": 0.980173707932652
+    },
+    "test": {
+      "vit5_changed_share": 0.4094271460519525,
+      "vit5_char_similarity": 0.9818005298597812
+    }
   },
-  "phobert_flips_fixed": 11,
-  "phobert_flips_broken": 51,
+  "phobert_flips_fixed": 34,
+  "phobert_flips_broken": 50,
   "flips": [
     {
-      "text": "Máy nước nóng xài oke",
-      "vit5": "Máy nước nóng xàioke",
+      "text": "Thấy bình thường, sẽ giới thiệu sản phẩm cho bạn bè, người thân",
+      "vit5": "Thấy bình thường, sẽ giới thiệu sản phẩm cho bạn bè, người thân",
       "label": "satisfied",
-      "before": "satisfied",
-      "after": "dissatisfied"
+      "before": "neutral",
+      "after": "satisfied"
     },
     {
-      "text": "Xịn ạ",
-      "vit5": "Xin thưa",
-      "label": "satisfied",
-      "before": "satisfied",
-      "after": "neutral"
-    },
-    {
-      "text": "Mới mua ngày đầu tiên sử dụng máy ép ko kĩ hay sao còn lợn cợn rất nhìu. Cần bên bảo hành gọi lại giúp e an",
-      "vit5": "Mới mua ngày đầu tiên sử dụng máy ép keo kĩ hay sao còn lợn cợn rất nhiều. Cần bên bảo hành gọi lại giúp em an",
+      "text": "mình mới mua máy dc 2 tháng , đag xay mở ra thấy dây su quấn quanh lưỡi dao, nhựa dưới lưỡi dao bị cắt trộn vào thức ăn, cho hỏi bị như hình có bảo hành được k à",
+      "vit5": "mình mới mua máy dọc 2 tháng , đang xay mở ra thấy dây sâu quấn quanh lưỡi dao, nhựa dưới lưỡi dao bị cắt trộn vào thức ăn, cho hỏi bị như hình có bảo hành được k và",
       "label": "dissatisfied",
       "before": "dissatisfied",
       "after": "neutral"
     },
     {
-      "text": "Qua tuyêt",
-      "vit5": "Qua tuyến",
+      "text": "Máy dễ xài thiết kế đẹp máy xài được vài lần thấy được ok nhưng về lâu về dài thì không biết sao không biết có giống phong cách phục vụ của điện máy xanh càng ngày càng đi xuống hay không",
+      "vit5": "Máy dễ xài thiết kế đẹp máy xài được vài lần thấy được ok nhưng về lâu về dài thì không biết sao không biết có giống phong cách phục vụ của điện máy xanh càng ngày càng đi xuống hay không",
+      "label": "neutral",
+      "before": "neutral",
+      "after": "satisfied"
+    },
+    {
+      "text": "Sao cho nước giặt và nước xả vào, lúc bầm khởi động để giặt nước xả xuống thì nước giặt và nước xả cũng chảy theo hết là sao",
+      "vit5": "Sao cho nước giặt và nước xả vào, lúc nãy khởi động để giặt nước xả xuống thì nước giặt và nước xả cũng chảy theo hết là sao",
+      "label": "dissatisfied",
+      "before": "neutral",
+      "after": "dissatisfied"
+    },
+    {
+      "text": "Không thể tin được pin có thể tích điện lâu đến như vậy bật quạt chế độ cao nhất 9 tiếng mà vẫn còn 75% pin, pin bền hay không phải cần thời gian sử dụng sau này mới biết được",
+      "vit5": "Không thể tin được pin có thể tích điện lâu đến như vậy bật quạt ở chế độ cao nhất 9 tiếng mà vẫn còn 75% pin, pin bền hay không phải cần thời gian sử dụng sau này mới biết được",
       "label": "satisfied",
+      "before": "neutral",
+      "after": "satisfied"
+    },
+    {
+      "text": "Sản phẩm có thiết kế đẹp máy mạnh dễ sử dụng nhưng không thể sử dụng nhiều quá 4 lần 1 lúc máy sẽ ngắt điện nên hơi bất tiện chút",
+      "vit5": "Sản phẩm có thiết kế đẹp máy mạnh dễ sử dụng nhưng không thể sử dụng nhiều quá 4 lần 1 lúc máy sẽ ngắt điện nên hơi bất tiện chút",
+      "label": "dissatisfied",
       "before": "satisfied",
       "after": "neutral"
     },
@@ -49,16 +68,37 @@
       "after": "dissatisfied"
     },
     {
-      "text": "sạc k đầy pin",
-      "vit5": "sạc kế đầy pin",
-      "label": "dissatisfied",
-      "before": "dissatisfied",
+      "text": "Xay sinh tố chứ không dùng lớp lọc được. Xài cũng được chủ yếu không được đa năng",
+      "vit5": "Xây sinh tố chứ không dùng lớp lọc được. Xài cũng được chủ yếu không được đa năng",
+      "label": "satisfied",
+      "before": "neutral",
+      "after": "dissatisfied"
+    },
+    {
+      "text": "Xài thấy cũng dc, bình thường",
+      "vit5": "Xài thấy cũng được, bình thường",
+      "label": "neutral",
+      "before": "satisfied",
       "after": "neutral"
+    },
+    {
+      "text": "Nhà tôi vẫn đang sử dụng để tắm hàng ngày và máy vẫn đang chạy bình thường",
+      "vit5": "Nhà tôi vẫn đang sử dụng để tắm hàng ngày và máy vẫn đang chạy bình thường",
+      "label": "satisfied",
+      "before": "neutral",
+      "after": "satisfied"
     },
     {
       "text": "Yếu nướng lâu",
       "vit5": "Yếu tố lâu",
       "label": "dissatisfied",
+      "before": "dissatisfied",
+      "after": "neutral"
+    },
+    {
+      "text": "4sa0 , máy mới chưa trai nghiệm nhiều nên đánh gái 4sao",
+      "vit5": "4sao , máy mới chưa trải nghiệm nhiều nên đánh gái 4sao",
+      "label": "satisfied",
       "before": "dissatisfied",
       "after": "neutral"
     },
@@ -70,6 +110,48 @@
       "after": "dissatisfied"
     },
     {
+      "text": "Mình mới nhận hàng lúc chiều, giờ lau tủ mới thấy cửa lệch vậy, không biết là cấu tạo tự nhiên hay là nó bị lỗi vậy, ĐMX có thể hỗ trợ giúp mình không",
+      "vit5": "Mình mới nhận hàng lúc chiều, giờ lau tủ mới thấy cửa lệch vậy, không biết là cấu tạo tự nhiên hay là nó bị lỗi vậy, ĐMX có thể hỗ trợ giúp mình không",
+      "label": "neutral",
+      "before": "neutral",
+      "after": "dissatisfied"
+    },
+    {
+      "text": "Đồng hồ có bóng nước trong",
+      "vit5": "Đồng hồ có bóng nước trong",
+      "label": "dissatisfied",
+      "before": "neutral",
+      "after": "satisfied"
+    },
+    {
+      "text": "Tam ổn",
+      "vit5": "Tam ổn",
+      "label": "satisfied",
+      "before": "neutral",
+      "after": "satisfied"
+    },
+    {
+      "text": "Mình mua được 14 ngày rồi, hôm nay 5h sáng đột nhiên kêu to, tiếng rét rét tầm 15p. Một bên hông tủ lạnh rất nóng, một bên bình thường. Vậy tủ lạnh có vấn đề gì không Xin hỗ trợ ạ",
+      "vit5": "Mình mua được 14 ngày rồi, hôm nay 5h sáng đột nhiên kêu to, tiếng rét rét tầm 15p. Một bên hông tủ lạnh rất nóng, một bên bình thường. Vậy tủ lạnh có vấn đề gì không Xin hỗ trợ ạ",
+      "label": "dissatisfied",
+      "before": "neutral",
+      "after": "dissatisfied"
+    },
+    {
+      "text": "Sạc rất lâu đầy pin",
+      "vit5": "Sạc rất lâu đầy pin",
+      "label": "dissatisfied",
+      "before": "dissatisfied",
+      "after": "satisfied"
+    },
+    {
+      "text": "Sài được 2 tháng... phải nói rất êm... tuy nhiên chưa nghe gọi được bằng messenger hoặc Zalo.. nhờ hỗ trợ ạ",
+      "vit5": "Sài được 2 tháng. . . phải nói rất êm. . . tuy nhiên chưa nghe gọi được bằng messenger hoặc Zalo. . nhờ hỗ trợ ạ",
+      "label": "satisfied",
+      "before": "neutral",
+      "after": "satisfied"
+    },
+    {
       "text": "Mới mua bỏ đồ đầy máy giặc êm và khô đồ.mong sử dụng bền bỉ như máy trước.đây là cái thứ 2 rồi",
       "vit5": "Mới mua bỏ đồ đầy máy giặc đêm và kho đồ. mong sử dụng bền bỉ như máy trước. đây là cái thứ 2 rồi",
       "label": "satisfied",
@@ -77,32 +159,53 @@
       "after": "dissatisfied"
     },
     {
-      "text": "Xịn xò mua đi mn",
-      "vit5": "Xin xí mua đi măn",
-      "label": "satisfied",
-      "before": "satisfied",
-      "after": "dissatisfied"
-    },
-    {
-      "text": "Mới mua về xạc đc 2 lần, lần nào cũng xạc gần 20 tiếng nhưng vẫn 50% pin , mong đc ĐMX hổ trợ ạ",
-      "vit5": "Mới mua về xạc đọc 2 lần, lần nào cũng xạc gần 20 tiếng nhưng vẫn 50% pin , mong đọc ĐMX hỗ trợ ạ",
-      "label": "dissatisfied",
-      "before": "neutral",
-      "after": "dissatisfied"
-    },
-    {
-      "text": "Tôi có mua con này tháng, nay nhượng lại vì tôi mua iPhone 16 rồi. xxxx<NUMBER>",
-      "vit5": "Tôi có mua con này tháng, nay nhượng lại vì tôi mua iPhone 16 rồi. xxxxNUMBER>",
+      "text": "Gần đây tai nghe của tôi chỉ kết nối dc 1 bên, đã reset lại tai nghe + bluetootch làm sao khắc phục ad ơi",
+      "vit5": "Gần đây tai nghe của tôi chỉ kết nối dọc 1 bên, đã reset lại tai nghe + bluetootch làm sao khắc phục ad ơi",
       "label": "neutral",
-      "before": "satisfied",
+      "before": "dissatisfied",
       "after": "neutral"
     },
     {
-      "text": "Dùng dc lắm",
-      "vit5": "Dùng độc lắm",
+      "text": "Máy nước nóng nhà tôi vẫn đang sử dụng bình thường",
+      "vit5": "Máy nước nóng nhà tôi vẫn đang sử dụng bình thường",
       "label": "satisfied",
-      "before": "satisfied",
-      "after": "dissatisfied"
+      "before": "neutral",
+      "after": "satisfied"
+    },
+    {
+      "text": "Ổn ápTuy nhiên lên pin khá chậm so với củ sạc dùng điệnMình mua cũ 55kGói hàng kỹSẽ quay lại tgdd",
+      "vit5": "Ổn ápTuy nhiên lên pin khá chậm so với củ sạc dùng điệnMình mua cũ 55kgGói hàng kỹSẽ quay lại tdd",
+      "label": "satisfied",
+      "before": "neutral",
+      "after": "satisfied"
+    },
+    {
+      "text": "Máy lọc mình quan sát thì lấy 1 lít nước sạch máy thải 2 lít nước khá ổn vì mình lọc nước giếng khoan. Nhưng có vấn đề là mặt kính RẤT NÓNG khi vậy mode nóng hoặc lạnh. Gọi kỹ thuật thì báo bth nhưng nó nóng đến nổi bạn chế nước lên rồi lau sơ tầm vài chục giây là khô. Không biết các bạn mua khác có bị không.",
+      "vit5": "Máy lọc mình quan sát thì lấy 1 lít nước sạch máy thải 2 lít nước khá ổn vì mình lọc nước giếng khoan. Nhưng có vấn đề là mặt kính RẤT NÓNG khi vậy model nóng hoặc lạnh. Gọi kỹ thuật thì báo bth nhưng nó nóng đến nổi bạn chế nước lên rồi lau sơ tầm vài chục giây là khô. Không biết các bạn mua khác có bị không.",
+      "label": "neutral",
+      "before": "neutral",
+      "after": "satisfied"
+    },
+    {
+      "text": "N/A",
+      "vit5": "N/A",
+      "label": "neutral",
+      "before": "neutral",
+      "after": "satisfied"
+    },
+    {
+      "text": "Máy dùng cũng được. Nhưng dao xay thịt làm rễ hỏng quá, cần làm chắc chắn hơn. Và cũng phải bán cả phụ kiện nữa",
+      "vit5": "Máy dùng cũng được. Nhưng dao xay thịt làm rễ hỏng quá, cần làm chắc chắn hơn. Và cũng phải bán cả phụ kiện nữa",
+      "label": "dissatisfied",
+      "before": "dissatisfied",
+      "after": "neutral"
+    },
+    {
+      "text": "Cũng tạm ok",
+      "vit5": "Cũng tạm ok",
+      "label": "satisfied",
+      "before": "neutral",
+      "after": "satisfied"
     },
     {
       "text": "NV tư vân tân tình tai Trung tâm the gioi di đông Hiep Bình",
@@ -112,39 +215,67 @@
       "after": "satisfied"
     },
     {
-      "text": "Hiện tại Sài OK ko biết sau này ổn ko nưaz",
-      "vit5": "Hiện tại Sài Gòn ko biết sau này ổn không nữa",
+      "text": "Độ ồn phải nói là êm thiệt sự. Nhà bếp mình sát phòng ngủ mà tối bật chế độ 1h, đóng cửa bếp thôi là gần như ko nghe gì.",
+      "vit5": "Độ ồn phải nói là êm thiệt sự. Nhà bếp mình sát phòng ngủ mà tối bật chế độ 1h, đóng cửa bếp thôi là gần như ko nghe gì.",
       "label": "satisfied",
+      "before": "satisfied",
+      "after": "dissatisfied"
+    },
+    {
+      "text": "Đã chỉnh được tạm dừng/phát",
+      "vit5": "Đã chỉnh được tạm dừng/phát",
+      "label": "satisfied",
+      "before": "neutral",
+      "after": "satisfied"
+    },
+    {
+      "text": "Xài tạm",
+      "vit5": "Xài tạm",
+      "label": "neutral",
       "before": "satisfied",
       "after": "neutral"
     },
     {
-      "text": "Minh moi mua hom qua. Giat thu ok vat khô",
-      "vit5": "Minh mới mua hôm qua. Giặt thử ok vật không",
-      "label": "satisfied",
-      "before": "satisfied",
+      "text": "Kết nối bluetooth sao lúc được lúc không vậy shop",
+      "vit5": "Kết nối bluetooth sao lúc được lúc không vậy shop",
+      "label": "neutral",
+      "before": "neutral",
+      "after": "dissatisfied"
+    },
+    {
+      "text": "Mới mua 590 Nó bây giờ còn 490",
+      "vit5": "Mới mua 590 Nó bây giờ còn 490",
+      "label": "neutral",
+      "before": "dissatisfied",
       "after": "neutral"
     },
     {
-      "text": "Đáng mua nha",
-      "vit5": "Đang mua nhà",
+      "text": "Mua quạt xong đúng đợt mất điện cao điểm. Quạt vừa đủ dùng, có chế độ chạy điện 220v và PIN, muốn gập và ngửa quạt thì phải tháo bỏ lò xo bên trong cổ quạt cho bác nào cần.",
+      "vit5": "Mua quạt xong đúng đợt mất điện cao điểm. Quạt vừa đủ dùng, có chế độ chạy điện 220v và PIN, muốn gập và ngửa quạt thì phải tháo bỏ lò xo bên trong cổ quạt cho bác nào cần.",
       "label": "satisfied",
-      "before": "satisfied",
-      "after": "neutral"
+      "before": "neutral",
+      "after": "satisfied"
     },
     {
-      "text": "Hiện tại dùng khá oke",
-      "vit5": "Hiện tại dùng khác",
-      "label": "satisfied",
-      "before": "satisfied",
-      "after": "neutral"
+      "text": "Tui mua hàng đã qua sử dụng 55k gần 1 năm nay ít sử dụng nên thấy tạm ổn",
+      "vit5": "Tui mua hàng đã qua sử dụng 55k gần 1 năm nay ít sử dụng nên thấy tạm ổn",
+      "label": "neutral",
+      "before": "neutral",
+      "after": "satisfied"
     },
     {
-      "text": "Dùng dk",
-      "vit5": "Dùng để",
+      "text": "Loa nghe hay, âm bass sâu, dải trung âm, vocal, voice sáng rõ, thích hợp cho nhạc trữ tình, bolero,... tuy nhiên khi kết nối bằng jack arc thì 2 loa surround không phát được nhạc, còn phát qua bluetooth thì kết nối được. Không biết phải lỗi không",
+      "vit5": "Loa nghe hay, âm bass sâu, dải trung âm, vocal, voice sáng rõ, thích hợp cho nhạc trữ tình, bolero,. . . tuy nhiên khi kết nối bằng jack cắm thì 2 loa surround không phát được nhạc, còn phát qua bluetooth thì kết nối được. Không biết phải lỗi không",
+      "label": "dissatisfied",
+      "before": "dissatisfied",
+      "after": "satisfied"
+    },
+    {
+      "text": "5 sao về chất lượng máy, nhưng mực in giá cao quá, 1h mực 300K in đc 400 trang là hết",
+      "vit5": "5 sao về chất lượng máy, nhưng mực in giá cao quá, 1h mực 300K in đúc 400 trang là hết",
       "label": "satisfied",
-      "before": "satisfied",
-      "after": "neutral"
+      "before": "dissatisfied",
+      "after": "satisfied"
     },
     {
       "text": "Sử dụng ik lắm ạ",
@@ -158,384 +289,176 @@
       "vit5": "sử dụng kho",
       "label": "satisfied",
       "before": "satisfied",
-      "after": "neutral"
-    },
-    {
-      "text": "Nấu cơm mềm. K bị cứng cơm như nồi bình thường giá hơi max.",
-      "vit5": "Nấu cơm mềm. Kìa bị cứng cơm như nồi bình thường giá hơi max.",
-      "label": "satisfied",
-      "before": "satisfied",
       "after": "dissatisfied"
     },
     {
-      "text": "Lõi mua zề sài ổn định... Bền hay không là do nguồn nước của bạn...",
-      "vit5": "Lõi mua về sai ổn định. . . Bền hay không là do nguồn nước của bạn. . .",
-      "label": "satisfied",
-      "before": "satisfied",
-      "after": "neutral"
-    },
-    {
-      "text": "Nhân viên tư vấn nói k có dây jack cắm nhưng đọc lại thì có dây jack cắm dài 1,1m là sao ạ Mình mua hàng k có dây jack cắm",
-      "vit5": "Nhân viên tư vấn nói k có dây jack cắm nhưng đọc lại thì k có dây jack cắm dài 1,1m là sao ạ Mình mua hàng k có dây jack cắm",
-      "label": "neutral",
-      "before": "neutral",
-      "after": "dissatisfied"
-    },
-    {
-      "text": "Nhanh hư",
-      "vit5": "Nhanh như",
-      "label": "dissatisfied",
-      "before": "dissatisfied",
-      "after": "satisfied"
-    },
-    {
-      "text": "Giặt ok",
-      "vit5": "Giấy tờ",
-      "label": "satisfied",
-      "before": "satisfied",
-      "after": "neutral"
-    },
-    {
-      "text": "sp tốr",
-      "vit5": "sắp tới",
-      "label": "satisfied",
-      "before": "satisfied",
-      "after": "neutral"
-    },
-    {
-      "text": "Bảo hành quá tệ",
-      "vit5": "Bảo hành quá khứ",
-      "label": "dissatisfied",
-      "before": "dissatisfied",
-      "after": "neutral"
-    },
-    {
-      "text": "K in đc wifi nhắn hỗ trợ k trả lời",
-      "vit5": "Ký tin nhắn wifi nhắn hỗ trợ ký trả lời",
-      "label": "dissatisfied",
-      "before": "dissatisfied",
-      "after": "neutral"
-    },
-    {
-      "text": "Tủ êm. Mình thích vỉ đá xoắn.tuy nhiên hôm đặt lại không để ý. Nên mình nhận dc vỉ đá hộp",
-      "vit5": "Tủ đêm. Mình thích vỉ đá xoắn. tuy nhiên hôm đặt lại không để ý. Nên mình nhận dọc vỉ đá hộp",
-      "label": "satisfied",
-      "before": "satisfied",
-      "after": "neutral"
-    },
-    {
-      "text": "Hiện tại mới mua máy, nhân viên đã cài nhưng hiện tại KHÔNG thể in thông qua wifi. Cũng đã thử cap in nhưng vẫn chưa được. Mong nhận được phản hồi và hỗ trợ từ shop.",
-      "vit5": "Hiện tại mới mua máy, nhân viên đã cài nhưng hiện tại KHÔNG thể in thông qua wifi. Cũng đã thử cáp in nhưng vẫn chưa được. Mong nhận được phản hồi và hỗ trợ từ shop.",
-      "label": "dissatisfied",
-      "before": "neutral",
-      "after": "dissatisfied"
-    },
-    {
-      "text": "Quạt nhẹ điện , điên tiêu thụ như quạt thường , mát như máy lạnh Mua 1 cái xài roi Mua thêm 2 cái ngươi thân",
-      "vit5": "Quạt nhẹ điện , điện tiêu thụ như quạt thường , mát như máy lạnh Mua 1 cái xài rồi Mua thêm 2 cái người thân",
+      "text": "Nhân viên tư vấn tốt,nhưng hàng cả hệ thống điện máy mà phải chờ 1 nồi cơm điện",
+      "vit5": "Nhân viên tư vấn tốt, nhưng hàng cả hệ thống điện máy mà phải chờ 1 nồi cơm điện",
       "label": "satisfied",
       "before": "dissatisfied",
       "after": "satisfied"
-    },
-    {
-      "text": "Moi mua 2 tháng chạy rất íu luôn.. đem bảo hành thì nó còn íu hơn lúc moi gữi chán noi k dk..",
-      "vit5": "Mới mua 2 tháng chạy rất ưu luôn. . đem bảo hành thì nó còn ưu hơn lúc mới gửi chán nơi k dk. .",
-      "label": "dissatisfied",
-      "before": "dissatisfied",
-      "after": "satisfied"
-    },
-    {
-      "text": "Sạt ko ổn định, dù đã kiểm tra kỹ dây kết nối và thay mới.",
-      "vit5": "Sạt kéo ổn định, dù đã kiểm tra kỹ dây kết nối và thay mới.",
-      "label": "dissatisfied",
-      "before": "dissatisfied",
-      "after": "satisfied"
-    },
-    {
-      "text": "Chống ồ ko đk tốt.nghe bình thường",
-      "vit5": "Chống đồ kéo kéo tốt. nghe bình thường",
-      "label": "neutral",
-      "before": "neutral",
-      "after": "satisfied"
-    },
-    {
-      "text": "Này của trung quốc . Mê xi cô đẳng hơn",
-      "vit5": "Ngày của trung quốc 1. Mê xi cô đẳng hơn",
-      "label": "neutral",
-      "before": "neutral",
-      "after": "satisfied"
-    },
-    {
-      "text": "đa phần oke, mạng hơi yếu",
-      "vit5": "đa phần casino, mạng hơi yếu",
-      "label": "satisfied",
-      "before": "satisfied",
-      "after": "neutral"
-    },
-    {
-      "text": "Chay hơi yếu chút",
-      "vit5": "Chạy hơi yếu chút",
-      "label": "dissatisfied",
-      "before": "neutral",
-      "after": "dissatisfied"
-    },
-    {
-      "text": "Đồng hồ bị mờ màn hình có dán mặt kiếng đc k ạ",
-      "vit5": "Đồng hồ bị mờ màn hình có dán mặt kiếng độc kỳ lạ",
-      "label": "neutral",
-      "before": "neutral",
-      "after": "dissatisfied"
-    },
-    {
-      "text": "Sản phẩm khá chất lượng.",
-      "vit5": "Sản phẩm khác chất lượng.",
-      "label": "satisfied",
-      "before": "satisfied",
-      "after": "dissatisfied"
     }
   ],
-  "corrections_noisy": [
+  "corrections": [
     {
-      "text": "Hình ảnh rõ nét.âm thanh to",
-      "text_vit5": "Hình ảnh rõ nét. âm thanh to"
+      "text": "Đáng mua nha",
+      "text_vit5": "Đang mua nhà"
     },
     {
-      "text": "Tôi mới mua máy ngày 10/8, đến hôm nay 11/8 mới sử dụng đúng 1 ngày. Đây cũng là lần đầu tiên tôi sạc máy nhưng đã gặp tình trạng pin sạc rất chậm để máy im, không sử dụng thì khoảng 8 phút mới tăng được 1% pin. Nếu đang sạc mà tôi nhấn vào máy thì máy lại bị tắt nguồn.Máy mới mua chưa được 1 ngày mà đã xảy ra tình trạng như vậy. Mong bên bạn kiểm tra và hỗ trợ đổi máy hoặc xử lý giúp tôi.",
-      "text_vit5": "Tôi mới mua máy ngày 10/8, đến hôm nay 11/8 mới sử dụng đúng 1 ngày. Đây cũng là lần đầu tiên tôi sạc máy nhưng đã gặp tình trạng pin sạc rất chậm để máy im, không sử dụng thì khoảng 8 phút mới tăng được 1% pin. Nếu đang sạc mà tôi nhấn vào máy thì máy lại bị tắt nguồn. Máy mới mua chưa được 1 ngày mà đã xảy ra tình trạng như vậy. Mong bên bạn kiểm tra và hỗ trợ đổi máy hoặc xử lý giúp tôi."
+      "text": "Nhân viên gắn quạt ko hỗ trợ gắn đường dây điện cho khách hàng",
+      "text_vit5": "Nhân viên gắn quạt không hỗ trợ gắn đường dây điện cho khách hàng"
     },
     {
-      "text": "Giao hàng nhanh , phục vụ chu đáo chuyên nghiệp, hàng chuẩn như đặt hàng khong móp méo.",
-      "text_vit5": "Giao hàng nhanh , phục vụ chu đáo chuyên nghiệp, hàng chuẩn như đặt hàng không móp méo."
+      "text": "Không kiểm tra sp trước khi giao. Lỗi phím ko dùng đc",
+      "text_vit5": "Không kiểm tra sp trước khi giao. Lỗi phím không dùng được"
     },
     {
-      "text": "Ko tiện vì ko có chế độ tắt riêng bếp, muốn tắt một bếp đi thì phải tắt nguồn rồi bật lại bếp đang nấu",
-      "text_vit5": "Không tiện vì ko có chế độ tắt riêng bếp, muốn tắt một bếp đi thì phải tắt nguồn rồi bật lại bếp đang nấu"
+      "text": "Mua dc 1 tuần, hiện tại là hài lòng. Máy thiết kế gọn, màu đẹp, hoạt động êm ko bị rung lắc nhiều. Tuy nhiên lồng giặt 8kg mà nhỏ hơn máy cũ 7kg và lúc lồng dừng quay có tiếng phanh kít hơi khó chịu. Nhưng tầm giá này thì vẫn ok",
+      "text_vit5": "Mua dọc 1 tuần, hiện tại là hài lòng. Máy thiết kế gọn, màu đẹp, hoạt động êm ko bị rung lắc nhiều. Tuy nhiên lồng giặt 8kg mà nhỏ hơn máy cũ 7kg và lúc lồng dừng quay có tiếng phanh kít hơi khó chịu. Nhưng tầm giá này thì vẫn ok"
     },
     {
-      "text": "Pin yếu vô cùng. Mở trong phòng 20m2 mà nhỏ xíu, trong khi âm lượng là 70%. Mong muốn đc đổi trả",
-      "text_vit5": "Pin yếu vô cùng. Mở trong phòng 20m2 mà nhỏ xíu, trong khi âm lượng là 70%. Mong muốn đọc đổi trả"
+      "text": "Máy xay k hài lòng gì cả , xay sinh tố thì lâu ơi lâu mới nhuyễn, cối xay thịt thì cũng đc , miếng đệm bong ra hư lùn, xay có chút nghe mùi khét nhựa !! Huhu, mong đc ĐMX hỗ trợ.",
+      "text_vit5": "Máy xay k hài lòng gì cả , xay sinh tố thì lâu hơi lâu mới nhuyễn, cối xay thịt thì cũng đục , miếng đệm bong ra như lùn, xay có chút nghe mùi khét nhựa ! ! Huhu, mong đọc ĐMX hỗ trợ."
     },
     {
-      "text": "Tốt mạnh nhưng ko biết bền ko",
-      "text_vit5": "Tốt mạnh nhưng không biết bền ko"
+      "text": "Thiết kế đẹp mắt, xay nhuyễn nhanh chóng, các cối xay có thể tháo rời dễ vệ sinh.dễ sử dụng.",
+      "text_vit5": "Thiết kế đẹp mắt, xay nhuyễn nhanh chóng, các cối xay có thể tháo rời dễ vệ sinh. dễ sử dụng."
     },
     {
-      "text": "Thời gian dùng đc có 1,5 giờ. Quảng cáo lố quá. Lần sau shop đăng thông tin chính xác vào. Làm thế này mất uy tín quá. Lần sau chắc ko mua luôn",
-      "text_vit5": "Thời gian dùng đọc có 1,5 giờ. Quảng cáo lố quá. Lần sau shop đăng thông tin chính xác vào. Làm thế này mất uy tín quá. Lần sau chắc ko mua luôn"
+      "text": "Đi mua điện thoại thay tai nghe nhỏ xinh nên mua luôn Mới mua thử tai cưa hàng thấy OK. Mong xai bên lâu chút mua gia giảm 600 mấy",
+      "text_vit5": "Đi mua điện thoại thấy tai nghe nhỏ xinh nên mua luôn Mới mua thử tai chưa hàng thấy OK. Mong xài bên lâu chút mua giá giảm 600 mấy"
     },
     {
-      "text": "Khá chắc chắn, ko bị lỏng lẻo, sạc ổn định.",
-      "text_vit5": "Khá chắc chắn, ko bị lỏng lẻo, sạch ổn định."
+      "text": "Tủ mới mua về cắm điện vào đường ga kêu quá to đến nỗi không ngủ được gọi dmx đổi thì báo qua bảo hành.nhân viên bảo hành lên thì bảo dòng tủ này kêu to như vậy. Tủ lạnh kêu to như vậy mà dmx lấy bán cho người dùng.dmx làm ăn như .. vậy",
+      "text_vit5": "Tủ mới mua về cắm điện vào đường ga kêu quá to đến nỗi không ngủ được gọi dmx đổi thì báo qua bảo hành. nhân viên bảo hành lên thì bảo dòng tủ này kêu to như vậy. Tủ lạnh kêu to như vậy mà dmx lấy bán cho người dùng. dmx làm ăn như . . vậy"
     },
     {
-      "text": "Đề nghị điện máy xanh cho nhân viên kiểm tra ngay.tivi của tôi mua từ sau khi nắp đến nay.nhiều khi mất hình có tiếng.chập chờn mỗi lần mất hình khoảng vài chục giây.....",
-      "text_vit5": "Đề nghị điện máy xanh cho nhân viên kiểm tra ngay. tivi của tôi mua từ sau khi nắp đến nay. nhiều khi mất hình có tiếng. chập chờn mỗi lần mất hình khoảng vài chục giây. . . . ."
+      "text": "Dao sắt, phù hợp cắt các loại rau, thịt, xương gà, cá, vừa tay cầm, lưỡi dao k bị rỉ sét",
+      "text_vit5": "Dao sắt, phù hợp cắt các loại rau, thịt, xương gà, cá, vừa tay cầm, lưỡi dao ít bị rỉ sét"
     },
     {
-      "text": "mới mua hôm trước xay 2lần giờ không hoạt động dich k bảo hành chang biết làm sao",
-      "text_vit5": "mới mua hôm trước xảy 2lần giờ không hoạt động dịch vụ bảo hành chẳng biết làm sao"
+      "text": "mới mua chưa được tuần chạy lố giờ,ngày thứ tùm lum. đang bảo hành,,thương hiệu tốt nhưng chất lượng quá kém",
+      "text_vit5": "mới mua chưa được tuần chạy lố giờ,ngày thứ tùm lum. đang bảo hành,thương hiệu tốt nhưng chất lượng quá kém"
     },
     {
-      "text": "Xài oke, nước mạnh, nóng",
-      "text_vit5": "Xài chai, nước mạnh, nóng"
+      "text": "Quạt tốt chỉ tội cái lò so cổ quạt hơi cứng nên khi sử dụng quạt cứ hất mặt lên trên.",
+      "text_vit5": "Quạt tốt chỉ tới cái lò so cổ quạt hơi cứng nên khi sử dụng quạt cứ hất mặt lên trên."
     },
     {
-      "text": "Tivi mua được tuần nay, bị lỗi mà 2 ông ĐMX và nv TCL cứ đổ qua lại do quá tải. Bjo để trưng bày",
-      "text_vit5": "Tivi mua được tuần nay, bị lỗi mà 2 ông ĐMX và nv TCL cứ đổ qua lại do quá tải. Mubarak để trưng bày"
+      "text": "Máy chạy êm . Nhân viên giao hàng hiền lành và rất khoẻ . Tự vát tủ lạnh trên lưng như siêu anh hùng",
+      "text_vit5": "Máy chạy đêm . Nhân viên giao hàng hiền lành và rất khoẻ . Tự vát tủ lạnh trên lưng như siêu anh hùng"
     },
     {
-      "text": "tot lam . dieu chinh dc nhiet do , nen mua",
-      "text_vit5": "tốt lắm . điều chỉnh đọc nhiệt độ , nên mua"
+      "text": "Tủ rất đẹp,chạy êm,ngăn đá rộng rãi, làm lạnh nhanh.Nhân viên điện máy xanh rất nhiệt tình.Tôi rất hài lòng",
+      "text_vit5": "Tủ rất đẹp,chạy êm,ngăn đá rộng rãi, làm lạnh nhanh. Nhân viên điện máy xanh rất nhiệt tình. Tôi rất hài lòng"
     },
     {
-      "text": "Sp tốt sang xin",
-      "text_vit5": "Sự tốt sang xin"
+      "text": "Quạt tốt Mua onl được nhân viên gắn dùm luôn Tuyệt vời",
+      "text_vit5": "Quạt tốt Mua laptop được nhân viên gắn dùm luôn Tuyệt vời"
     },
     {
-      "text": "Sản phẩm tốt, nướng thức ăn ngon, thiết kế dễ vệ sinh, nv nói tư vấn nói chuyện dễ thương",
-      "text_vit5": "Sản phẩm tốt, nướng thức ăn ngon, thiết kế dễ vệ sinh, và nói tư vấn nói chuyện dễ thương"
+      "text": "Máy mới lắp buổi tối đến sáng hôm sau lỗi thùng máy chảy nước ra khắp nền nhà gọi 2 lần tổng đài kêu đợi nhân viên đến kiểm tra mà mãi chả thấy đâu. Tốn công tốn việc ở nhà đợi. Mua j cũng đến dmx. Mà h gặp bảo hành sau bán thế này nản. Còn ko đến dc thì phải gọi chính xác chừng nào đến cứ hẹn hết giờ này đến giờ nọ. Mất công ăn viec làm quá.",
+      "text_vit5": "Máy mới lắp buổi tối đến sáng hôm sau lỗi thùng máy chảy nước ra khắp nền nhà gọi 2 lần tổng đài kêu đợi nhân viên đến kiểm tra mà mãi chả thấy đâu. Tốn công tốn việc ở nhà đợi. Mua gì cũng đến dmx. Mà họ gặp bảo hành sau bán thế này nản. Còn ko đến dmx thì phải gọi chính xác chừng nào đến cứ hẹn hết giờ này đến giờ nọ. Mất công ăn việc làm quá."
     },
     {
-      "text": "Máy kêu è è càng ngày càng to á shop....mong shop xem lại thử chứ kêu k ngủ dk lun",
-      "text_vit5": "Máy kêu ầm ĩ càng ngày càng to á shop. . . . mong shop xem lại thử chứ kêu k ngủ k ngủ lun lun"
+      "text": "Đã dùng thử....cảm thấy ok...sẽ ủng hộ shop lần sau!",
+      "text_vit5": "Đã dùng thử. . . . cảm thấy ok. . . sẽ ủng hộ shop lần sau!"
     },
     {
-      "text": "Hàng mua của tất cả hãng, khi hàng bị lỗi hoặc hư, hãng bảo hành không trách nhiệm, kêu mua cái mới, chứ sửa khoản 5 triệu, nói là hư nặng lắm, nhưng khi kêu thợ bên ngoài họ sửa có 650 k bảo hành 6 tháng. Hãng bảo trì bảo hành tệ, tệ quá tệ",
-      "text_vit5": "Hàng mua của tất cả hãng, khi hàng bị lỗi hoặc hư, hãng bảo hành không trách nhiệm, kêu mua cái mới, chứ sửa khoảng 5 triệu, nói là hư nặng lắm, nhưng khi kêu thợ bên ngoài họ sửa có 650 kg bảo hành 6 tháng. Hãng bảo trì bảo hành tệ, tệ quá tệ"
+      "text": "Mình mua hàng ĐSD. Hôm đầu mua về sử dụng bình thường, nhưng hôm thứ 2 thì nó ồn, bơm nước không hoạt động trong khi bình còn tận hơn 2l nước, nước thi thoảng nhỏ vào cánh quạt và bắn ra sàn và quan trọng là ngày nào cũng phải thay nước, vì ngày hôm sau dùng lại nước của ngày hôm trước là hôi kinh khủng khiếp mùi rêu, mình tháo ra vệ sinh thì toàn cặn bẩn đóng màng nhày khắp quạt @@",
+      "text_vit5": "Mình mua hàng ĐSD. Hôm đầu mua về sử dụng bình thường, nhưng hôm thứ 2 thì nó ồn, bơm nước không hoạt động trong khi bình còn tận hơn 2l nước, nước thi thoảng nhỏ vào cánh quạt và bắn ra sàn và quan trọng là ngày nào cũng phải thay nước, vì ngày hôm sau dùng lại nước của ngày hôm trước là hôi kinh khủng khiếp mùi rêu, mình tháo ra vệ sinh thì toàn cặn bẩn đóng màng nhày khắp quạt"
     },
     {
-      "text": "sản phẩm oke, thích vẻ ngoài, dễ sử dụng, sau sử dụng sạch, hoạt động kêu bình thường êm",
-      "text_vit5": "sản phẩmoke, thích vẻ ngoài, dễ sử dụng, sau sử dụng sạch, hoạt động kêu bình thường đêm"
+      "text": "Sản phẩm dùng ổn định tiết kiệm tiện rất tốt",
+      "text_vit5": "Sản phẩm dùng ổn định tiết kiệm tiền rất tốt"
     },
     {
-      "text": "Cho mình hỏi làm sao để giảm âm lượng mic......nhạc thì có thể mở nhỏ đc nhưng míc thì k đc..và sao vừa dùng vừa sạc máy cứ ngắt k đủ pin quá bất tiện",
-      "text_vit5": "Cho mình hỏi làm sao để giảm âm lượng mic. . . . . . nhạc thì có thể mở nhỏ đọc nhưng mic thì k đọc. . và sao vừa dùng vừa sạc máy cứ ngắt k đủ pin quá bất tiện"
-    },
-    {
-      "text": "quạt mát sài cả đêm mà ko nóng môtơ",
-      "text_vit5": "quạt mát sài cả đêm mà không nóng nữa"
-    },
-    {
-      "text": "Sản phẩm rất tệ . Mới mua từ cửa hàng ra là đã bị ố do ốp trong suốt nên khi ốp lên đt coi kỹ mới thấy rõ . Sản phẩm này không bảo hành và không có chính sách đổi trả nên rất mong TGDD hỗ trợ .",
-      "text_vit5": "Sản phẩm rất tệ . Mới mua từ cửa hàng ra là đã bị ố do ốp trong suốt nên khi ốp lên đặt coi kỹ mới thấy rõ . Sản phẩm này không bảo hành và không có chính sách đổi trả nên rất mong TGDD hỗ trợ ."
+      "text": "Tốt...nhanh lạnh",
+      "text_vit5": "Tốt. . . nhanh lạnh"
     },
     {
       "text": "Tủ chạy êm, nv giao hàng nhiệt tình",
       "text_vit5": "Tủ chạy êm, vỉ giao hàng nhiệt tình"
     },
     {
-      "text": "Sản phẩm giá rất rẽ. Mẫu mã đẹp. Phù hợp vs bếp. Có đầy đủ chức năng tiện lợi. Phím bấm hơi cứng nhưng không sao. Vì hàng giảm giá nên k đòi hỏi nhiều hoàng hảo.",
-      "text_vit5": "Sản phẩm giá rất rẽ. Mẫu mã đẹp. Phù hợp với bếp. Có đầy đủ chức năng tiện lợi. Phím bấm hơi cứng nhưng không sao. Vì hàng giảm giá nên kẻ đòi hỏi nhiều hoàng hảo."
+      "text": "Pin dung lượng bền bỉ, sử dụng tương thích được với nhiều sản phẩm như remote, máy tính ,.... thành phần của sản phẩm an toàn không gây tình trạng cháy nổ",
+      "text_vit5": "Pin dung lượng bền bỉ, sử dụng tương thích được với nhiều sản phẩm như remote, máy tính ,. . . . thành phần của sản phẩm an toàn không gây tình trạng cháy nổ"
     },
     {
-      "text": "Ổn nhưng mua tặng bố màu bạc ko thích lắm. TGDD có hỗ trợ đổi trả spham ko",
-      "text_vit5": "Ổn nhưng mua tặng bố màu bạc không thích lắm. TGDD có hỗ trợ đổi trả spham không"
+      "text": "Quạt thì dùng ok mỗi cái vấn đề là cứ bị ngửa đầu trong khi sử dụng cần đem đi bảo hành.nhưng đem đi ngày 16/08 giấy hẹn 31/08. qua ngày không nhận được thông tin gọi điện lên lại hẹn 9/9 ra lấy.ngày 11/09 ra lấy lại bảo không có. gọi điện lại hẹn một hôm nữa e trả lời.đến giờ gọi điện lên không biết bao nhiêu cuộc rồi.KẾT QUẢ LÀ HÔM NAY NGÀY 19/09 GIA ĐÌNH TÔI VẪN CHƯA BIẾT KHI NÀO QUẠT SẼ VỀ. và cũng chưa nhận được thông tin gì cả.Mua quạt dùng cho mùa hè mà mất hơn 1 tháng hè ở yên trong DMX gọi điện thì hẹn này hẹn lọ xin lỗi cho qua câu chuyện. Thực sự mua hàng DMX giá chát để đổi lấy sự phục vụ tốt mà thế này thì mua hàng chợ cho rẻ với tin rằng họ cũng không om hàng tới trên 1 tháng như này đâu.chia sẻ câu chuyện thật cho mọi người biết thông tin. mua ở DMX nhiều lần đầu đi bảo hành và nếm mùi....",
+      "text_vit5": "Quạt thì dùng ok mỗi cái vấn đề là cứ bị ngửa đầu trong khi sử dụng cần đem đi bảo hành. nhưng đem đi ngày 16/08 giấy hẹn 31/08. qua ngày không nhận được thông tin gọi điện lên lại hẹn 9/9 ra lấy. ngày 11/09 ra lấy lại bảo không có. gọi điện lại hẹn một hôm nữa em trả lời. đến giờ gọi điện lên không biết bao nhiêu cuộc rồi. KẾT QUẢ LÀ HÔM NAY NGÀY 19/09 GIA ĐÌNH TÔI VẬN CHƯA BIẾT KHI NÀO QUÁT SẼ VỀ. và cũng chưa nhận được thông tin gì cả. Mua quạt dùng cho mùa hè mà mất hơn 1 tháng hè ở yên trong DMX gọi điện thì hẹn ngày hẹn lọ xin lỗi cho qua câu chuyện. Thực sự mua hàng DMX giá chát để đổi lấy sự phục vụ tốt mà thế này thì mua hàng chợ cho rẻ với tin rằng họ cũng không ôm hàng tới trên 1 tháng như này đâu. chia sẻ câu chuyện thật cho mọi người biết thông tin. mua ở DMX nhiều lần đầu đi bảo hành và nếm mùi. . . ."
     },
     {
-      "text": "Loa mở 80100% nghe mới ổn , còn mà kêu mở 50% đc 18 tiếng thì còn nhỏ hơn loa đt thế nghe loa đt còn OK hơn muA chỉ , mở 100% đc tầm 45 tiếng hết pin , nói chung tệ phế",
-      "text_vit5": "Loa mở 80100% nghe mới ổn , còn mà kêu mở 50% đọc 18 tiếng thì còn nhỏ hơn loa đắt thế nghe loa đắt còn OK hơn muA chỉ , mở 100% đọc tầm 45 tiếng hết pin , nói chung tệ phế"
+      "text": "Rất oke giao hàng nhanh",
+      "text_vit5": "Rất may giao hàng nhanh"
     },
     {
-      "text": "quat tôt",
-      "text_vit5": "quả tốt"
+      "text": "Nồi cơm nấu khi sôi bị trào nước.Mẹ tôi nấu phải canh cơm sôi để bật nắp lên để ko bị trào nước ra ngoài",
+      "text_vit5": "Nồi cơm nấu khi sôi bị trào nước. Mẹ tôi nấu phải canh cơm sôi để bật nắp lên để không bị trào nước ra ngoài"
     },
     {
-      "text": "Về nhà gắn vào sử dụng tốt.vừa ý.",
-      "text_vit5": "Về nhà gắn vào sử dụng tốt. vừa ý."
+      "text": "Pin hãng nên chất lượng, xài lâu hơn pin thường mua ở tiệm, hàng ở điện máy xanh chất lượng nên mua gì củng vào đây",
+      "text_vit5": "Pin hãng nên chất lượng, xài lâu hơn pin thường mua ở tiệm, hàng ở điện máy xanh chất lượng nên mua gì cũng vào đây"
     },
     {
-      "text": "Không nên muaMáy lỗi nhiều lần bảo hành, bảo hành tiếp lỗi nặng hơn, nước phun ra bên trong máy, may không cháy nổ.Dịch vụ bảo hành cực kỳ tồi tệ từ hãng cho đến đến ĐMX.",
-      "text_vit5": "Không nên muaMáy lỗi nhiều lần bảo hành, bảo hành tiếp lỗi nặng hơn, nước phun ra bên trong máy, máy không cháy nổ. Dịch vụ bảo hành cực kỳ tồi tệ từ hãng cho đến đến ĐMX."
+      "text": "Máy xay sinh tố đa năng, xay thịt được, máy sử dụng tiết kiệm diện. Mẫ mã đơn giản",
+      "text_vit5": "Máy xay sinh tố đa năng, xay thịt được, máy sử dụng tiết kiệm diện. Mẫu mã đơn giản"
     },
     {
-      "text": "rất tốt giá hợp lí nên mua nha mn",
-      "text_vit5": "rất tốt giá hợp lí nên mua nhà mới"
+      "text": "Lợi dụng khách hàng không biết kiểm tra giao hàng bể . Hứa đổi trả lại cả tuần k liên hệ lại . Lừa đảo",
+      "text_vit5": "Lợi dụng khách hàng không biết kiểm tra giao hàng bể . Hứa đổi trả lại cả tuần không liên hệ lại . Lừa đảo"
     },
     {
-      "text": "Sản phẩm tốt còn bền ko thì chưa biết ☺️☺️",
-      "text_vit5": "Sản phẩm tốt còn bền ko thì chưa biết"
-    }
-  ],
-  "overcorrections_clean": [
-    {
-      "text": "Mình đánh gia cao sản phẩm này có thiết kế rất đẹp và sự chăm sóc khách hàng chu đáo từ nhân viên. Người thật, việc thật. Nếu không hài lòng tôi sẽ không đánh giá tốt sản phẩm. Mọi người đừng nhìn sản phẩm qua 1 lớp seal mỏng, hãy nhờ nhân viên cho thử và trải nghiệm mới cảm nhận đuợc nét đẹp của sản phẩm ạ. Xin cảm ơn",
-      "text_vit5": "Mình đánh giá cao sản phẩm này có thiết kế rất đẹp và sự chăm sóc khách hàng chu đáo từ nhân viên. Người thật, việc thật. Nếu không hài lòng tôi sẽ không đánh giá tốt sản phẩm. Mọi người đừng nhìn sản phẩm qua 1 lớp seal mỏng, hãy nhờ nhân viên cho thử và trải nghiệm mới cảm nhận được nét đẹp của sản phẩm ạ. Xin cảm ơn"
+      "text": "Hàng ok, dv ok",
+      "text_vit5": "Hoàng ok, vợ ok"
     },
     {
-      "text": "Bếp bật lên khó, mồi lửa thì khè ,phực...đang gửi bảo hành",
-      "text_vit5": "Bếp bật lên khó, mồi lửa thì khó ,phức. . . đang gửi bảo hành"
+      "text": "May hoat đong em ai khong bi on, nog lanh tot",
+      "text_vit5": "Máy hoạt động êm ái không bị ồn, nóng lạnh tốt"
     },
     {
-      "text": "Quạt ok tốt",
-      "text_vit5": "Quạt gió tốt"
+      "text": "Máy mãu mã đẹp, xay êm, chất liệu nhựa nên dễ di chuyển. Tiết kiệm điện, giả cả hợp lý, sẽ ủng hộ cửa hàng nhiều!!!",
+      "text_vit5": "Máy màu mã đẹp, xay êm, chất liệu nhựa nên dễ di chuyển. Tiết kiệm điện, giá cả hợp lý, sẽ ủng hộ cửa hàng nhiều! ! !"
     },
     {
-      "text": "mạnh lắm mát nữa",
-      "text_vit5": "mạnh lắm mặt nữa"
+      "text": "T đổi lần này là cục thứ 34 rồi. Sạc được cái đầu tiên thì ổn. Sau đó sạc pin ko lên. Đổi càng về sau. Sạc nguyên ngày qua hơn 1 đêm pin vẫn ko đầy. 45t đồng hồ lên đc 2%. Chập chập thì sạc nhanh. Bức xúc cực kì. Ko nhẽ đổi tiếp ngại với nhân viên bán hàng luôn",
+      "text_vit5": "Tự đổi lần này là cục thứ 34 rồi. Sạc được cái đầu tiên thì ổn. Sau đó sạc pin ko lên. Đổi càng về sau. Sạc nguyên ngày qua hơn 1 đêm pin vẫn ko đầy. 45t đồng hồ lên đọc 20%. Chập chập thì sạc nhanh. Bức xúc cực kì. Không nhẽ đổi tiếp ngại với nhân viên bán hàng luôn"
     },
     {
-      "text": "Hiện tại nồi cơm rất OK. Nhân viên wa nhiệt tình",
-      "text_vit5": "Hiện tại nồi cơm rất OK. Nhân viên quá nhiệt tình"
+      "text": "Qua 1 đêm k bật nên dc , bên điện máy xanh cho người qua kiểm tra giúp mình",
+      "text_vit5": "Qua 1 đêm không bật nên đọc , bên điện máy xanh cho người qua kiểm tra giúp mình"
     },
     {
-      "text": "Quạt sạc mãi cũng không biết đã đầy chưa chế độ acquy không dùng được mức to nhất đèn báo pin líc nào cũng nháy",
-      "text_vit5": "Quạt sạc mãi cũng không biết đã đầy chưa chế độ acquy không dùng được mức to nhất đèn báo pin lúc nào cũng nháy"
+      "text": "Dịch vụ & nhân viên tận tình- 0K ❤️",
+      "text_vit5": "Dịch vụ & nhân viên tận tình- 0K"
     },
     {
-      "text": "sac nhanh khá ok",
-      "text_vit5": "sắc nhanh khá ok"
+      "text": "dùng 3 năm rồi vẫn chưa hỏng, lúc đầu mua về chủ yếu nấu nước tắm, nước uống. Lúc sau có máy nước nóng nên cũng ít dùng. Chân đế tiếp điện bền, dây cắm không bị nóng khi đun. Có điều dùng 1 thời gian relay không còn nhạy nữa, nước sôi rồi nhưng ko ngắt",
+      "text_vit5": "dùng 3 năm rồi vẫn chưa hỏng, lúc đầu mua về chủ yếu nấu nước tắm, nước uống. Lúc sau có máy nước nóng nên cũng ít dùng. Chân đế tiếp điện bền, dây cắm không bị nóng khi đun. Có điều dùng 1 thời gian relay không còn nhạy nữa, nước sôi rồi nhưng không ngắt"
     },
     {
-      "text": "Sạc rất tốt và nhanh",
-      "text_vit5": "Sắc rất tốt và nhanh"
+      "text": "Quạt quay êm ko ồn. Điều khiển dễ dàng.",
+      "text_vit5": "Quạt quay êm không ồn. Điều khiển dễ dàng."
     },
     {
-      "text": "máy xay dùng tốt ,dễ sử dụng ,dễ tháo ra để vệ sinh máy ,nhân viên điện máy xanh nhiệt tình ,chu đáo ,hướng dẫn tỉ mỉ",
-      "text_vit5": "máy xây dựng tốt ,dễ sử dụng ,dễ tháo ra để vệ sinh máy ,nhân viên điện máy xanh nhiệt tình ,chu đáo ,hướng dẫn tỉ mỉ"
+      "text": "San pham chat luong tot nhan vien phuc vu tan tinh",
+      "text_vit5": "Sản phẩm chất lượng tốt nhân viên phục vụ tận tình"
     },
     {
-      "text": "Sao cho nước giặt và nước xả vào, lúc bầm khởi động để giặt nước xả xuống thì nước giặt và nước xả cũng chảy theo hết là sao",
-      "text_vit5": "Sao cho nước giặt và nước xả vào, lúc nãy khởi động để giặt nước xả xuống thì nước giặt và nước xả cũng chảy theo hết là sao"
+      "text": "Tủ quá kêu kọt kẹt pòng nhỏ khó ngủ",
+      "text_vit5": "Thủ quá kêu kẹt kẹt phòng nhỏ khó ngủ"
     },
     {
-      "text": "Chat lương tốt",
-      "text_vit5": "Chất lượng tốt"
+      "text": "Đổi lần thứ hai rồi chán quá.Cái đầu tiên tự động bật nút, cái thứ hai thì nấu dc 2 bát gạo, nấu thêm bát nữa là trên chín dưới sống 😴",
+      "text_vit5": "Đổi lần thứ hai rồi chán quá. Cái đầu tiên tự động bật nút, cái thứ hai thì nấu dọc 2 bát gạo, nấu thêm bát nữa là trên chín dưới sống"
     },
     {
-      "text": "Quạt rất mát, độ quay nhanh và êm .nói chung rất rất hài lòng với cây quạt này .rất tiếc đặc mua thêm 1 cây nữa mà khu vực Ninh Thuận hết hàng",
-      "text_vit5": "Quạt rất mát, độ quay nhanh và êm . nói chung rất rất hài lòng với cây quạt này . rất tiếc đặc mua thêm 1 cây nữa mà khu vực Ninh Thuận hết hàng"
+      "text": "Sao sạc tới 80% là tự ngắt sạc v ạ",
+      "text_vit5": "Sao sạc tới 80% là tự ngắt sạc vậy ạ"
     },
     {
-      "text": "Ok. Đẹp. Công suất cao. Giá hợp lý",
-      "text_vit5": "Ok. Đẹp. Công suất cao. Giá hợp lý."
-    },
-    {
-      "text": "Rất tốy",
-      "text_vit5": "Rất tốt"
-    },
-    {
-      "text": "Máy xinh xỉu. Gấp gọn được. Sấy nhanh khô",
-      "text_vit5": "Máy xinh xắn. Gấp gọn được. Sấy nhanh khô"
-    },
-    {
-      "text": "Trời ơi máy quạt siêu mát luôn, ngủ mà lúc nào cũng phải đắp mền luôn đó trời, nhà mình đã mua 4 cây và giới thiệu c e bạn bè mua thêm 4 cây nữa rồi, đáng tiền lắm luôn 10 điểm 🖐️🤚",
-      "text_vit5": "Trời ơi máy quạt siêu mát luôn, ngủ mà lúc nào cũng phải đắp mền luôn đó trời, nhà mình đã mua 4 cây và giới thiệu cô em bạn bè mua thêm 4 cây nữa rồi, đáng tiền lắm luôn 10 điểm"
-    },
-    {
-      "text": "Pin trâu bò, âm thanh ổn trong tầm giá bass hơi yếu, đàm thoại zalo nhỏ, giá dưới 1 tr thì tạm chấp nhận thôi, điểm mạnh của con này là thời lượng pin",
-      "text_vit5": "Pin trâu bò, âm thanh ổn trong tầm giá bass hơi yếu, đàm thoại zalo nhỏ, giá dưới 1 triệu thì tạm chấp nhận thôi, điểm mạnh của con này là thời lượng pin"
-    },
-    {
-      "text": "Dùng thấy 8đ. Nghe gọi tốt. Ghét cái kiểu dock nay, to và thô vai cả lọ",
-      "text_vit5": "Dùng thấy 8đ. Nghe gọi tốt. Ghét cái kiểu dock này, to và thô vai cả lọ"
-    },
-    {
-      "text": "Sản phẩm xài khá chất lượng",
-      "text_vit5": "Sản phẩm xài khác chất lượng"
-    },
-    {
-      "text": "Dây sữ dụng tốt, sạc nhanh, đánh giá 5 sao",
-      "text_vit5": "Dây sử dụng tốt, sạc nhanh, đánh giá 5 sao"
-    },
-    {
-      "text": "Rất xịn những mà nó to lắm Nên mua thêm cáp 5A để tối ưu cổng 65W",
-      "text_vit5": "Rất xịn nhưng mà nó to lắm Nên mua thêm cáp 5A để tối ưu cổng 65W"
-    },
-    {
-      "text": "sản phẩm bền, đẹp, cầm vừa tay, dể vệ sinh. thích hợp chiên đồ ăn, rất thích sản phẩm này",
-      "text_vit5": "sản phẩm bền, đẹp, cầm vừa tay, dễ vệ sinh. thích hợp chiên đồ ăn, rất thích sản phẩm này"
-    },
-    {
-      "text": "Lần đầu mua và sử dụng sản phẩm của điện máy xanh. Tôi thấy sản phẩm tốt .nhân viên rất nhiệt tình",
-      "text_vit5": "Lần đầu mua và sử dụng sản phẩm của điện máy xanh. Tôi thấy sản phẩm tốt . nhân viên rất nhiệt tình"
-    },
-    {
-      "text": "San pham su dung tốt",
-      "text_vit5": "Sản phẩm sử dụng tốt"
-    },
-    {
-      "text": "Thiết kế đẹp máy êm nhân viên giao hàng vui tín tôi rất hài lòng",
-      "text_vit5": "Thiết kế đẹp máy êm nhân viên giao hàng vui tính tôi rất hài lòng"
-    },
-    {
-      "text": "Bắt wifi chập chà chập chời. Ngày nào sài reset ng đó. Quá chán",
-      "text_vit5": "Bắt wifi chập chờn chập chờn. Ngày nào xài reset ông đó. Quá chán"
-    },
-    {
-      "text": "Sạn phẩm đẹp, tốt, ưng ý",
-      "text_vit5": "Sản phẩm đẹp, tốt, ưng ý"
-    },
-    {
-      "text": "chính sách bảo hành của hãng quá kém, báo lỗi cho cửa hàng, cửa hàng chuyển hãng về bảo hành mà hãng lại gọi điện cho chủ nhà yêu cầu chủ nhà tự liên hệ cửa hàng về xem cho rồi gọi về cho hãng.... không về xem cho. Ai chưa mua thì tránh hãng LG ra,",
-      "text_vit5": "chính sách bảo hành của hãng quá kém, báo lỗi cho cửa hàng, cửa hàng chuyển hãng về bảo hành mà hãng lại gọi điện cho chủ nhà yêu cầu chủ nhà tự liên hệ cửa hàng về xem cho rồi gọi về cho hãng. . . . không về xem cho. Ai chưa mua thì tránh hãng LG ra,"
-    },
-    {
-      "text": "Sài im và ổn định, bền",
-      "text_vit5": "Sài Gòn và ổn định, bền"
-    },
-    {
-      "text": "Đồng hồ kháng nước quá tệ chỉ rửa tay thôi mà vẫn bị vô nước. Lúc đầu thì để một chút là không còn hơi nước bay giờ để thì nó loãng ra hết bề mặt luôn rồi",
-      "text_vit5": "Đồng hồ kháng nước quá tệ chỉ rửa tay thôi mà vẫn bị vô nước. Lúc đầu thì để một chút là không còn hơi nước bây giờ để thì nó loãng ra hết bề mặt luôn rồi"
+      "text": "mua dc vài tháng rồi. trước mắt thì ok.... còn về sau chưa biết. mình thỉnh thoảng mới dùng. mực in thì rõ. cài in qua wifi lên youtobe xem hướng dẫn và làm từ từ đọc kỹ hướng đẫn là ok.",
+      "text_vit5": "mua dọc vài tháng rồi. trước mắt thì ok. . . . còn về sau chưa biết. mình thỉnh thoảng mới dùng. mực in thì rõ. cài in qua wifi lên youtobe xem hướng dẫn và làm từ từ đọc kỹ hướng dẫn là ok."
     }
   ]
 }
